@@ -90,12 +90,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 7378611707262943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aca07abf572f70a4aa0fbb9d2ffb9d42, type: 3}
+  m_Script: {fileID: 11500000, guid: ec10ac9d70d198344abcbee2f19d8452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 8
   rb: {fileID: -6552164624481358405}
-  lifetime: 10
+  slowDown: 5
+  timeToStartSlow: 2
+  slowingDown: 0
 --- !u!50 &-6552164624481358405
 Rigidbody2D:
   serializedVersion: 4

@@ -7,38 +7,49 @@ public class Arrow : MonoBehaviour
     public float speed = 1f;
     public Rigidbody2D rb;
     public float slowDown = 5f;
+    public float decreasingValue;
+    public float timeToStartSlow = 2f;
+    bool slowingDown = false;
 
-    void Start()
-    {
-        rb.velocity = transform.right * speed;
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         speed = 0f;
     }
     private void Update()
     {
-        slowDown -= Time.deltaTime;
-        if(slowDown <= 0)
+        ArrowSpeed();
+    }
+
+    void ArrowSpeed()
+    {
+        if (!slowingDown)
         {
-            speed = 0f;
             rb.velocity = transform.right * speed;
-        } else if (slowDown <= 1)
-        {
-            speed = 1f;
-            rb.velocity = transform.right;
-        } else if (slowDown <= 2)
-        {
-            speed = 2f;
-            rb.velocity = transform.right / speed;
-        } else if (slowDown <= 3)
-        {
-            speed = 3f;
-            rb.velocity = transform.right / speed;
-        } else if (slowDown <= 4)
-        {
-            speed = 4f;
-            rb.velocity = transform.right / speed;
+
+            timeToStartSlow -= Time.deltaTime;
         }
+
+        if (timeToStartSlow <= 0)
+        {
+            slowingDown = true;
+        }
+
+        if (slowingDown)
+        {
+            if (speed > 0)
+            {
+                rb.velocity = transform.right * speed;
+
+                speed -= decreasingValue;
+
+                print(speed);
+            }
+
+            else if(speed <= 0)
+            {
+                rb.velocity = Vector2.zero;
+            }
+        }
+
     }
 }
