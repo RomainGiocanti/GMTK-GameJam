@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class PlayerController : LivingBeing
 {
-    public float speed;
     private Rigidbody2D rb;
     private Vector2 mv;
 
