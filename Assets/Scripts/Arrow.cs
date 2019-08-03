@@ -7,7 +7,7 @@ public class Arrow : MonoBehaviour
     public float speed = 1f;
     public Rigidbody2D rb;
     public float slowDown = 5f;
-    public float lower = 2f;
+    public float decreaseValue;
 
     void Start()
     {
@@ -36,7 +36,15 @@ public class Arrow : MonoBehaviour
             rb.velocity = transform.right * speed;
         } else
         {
-            rb.velocity = transform.right / lower;
+            if(speed >= 0)
+            {
+                speed -= decreaseValue;
+            }
+            if(speed < 0)
+            {
+                speed = 0;
+            }
+            rb.velocity = transform.right * speed;
         }
     }
 }

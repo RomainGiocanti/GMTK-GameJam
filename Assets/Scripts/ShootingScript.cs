@@ -34,7 +34,7 @@ public class ShootingScript : MonoBehaviour
                 shootingCanvas.SetActive(true);
                 buttonHold -= Time.deltaTime;
                 timerBar.fillAmount = buttonHold / maximumHoldTime;
-                if (buttonHold <= maximumHoldTime / 2) timerBar.color = Color.red;
+                if (buttonHold <= maximumHoldTime / 4) timerBar.color = Color.red;
             }
 
             if (hasArrow == true && buttonHold <= 0)

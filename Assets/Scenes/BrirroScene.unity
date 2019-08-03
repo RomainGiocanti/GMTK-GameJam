@@ -498,82 +498,72 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
---- !u!1001 &4896691784046462634
+--- !u!1001 &2717326480932357104
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4896691783623598345, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373907, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4896691783623598338, guid: 520bf4513303cd343a7193464f1c9bdb,
+    - target: {fileID: 2717326480775373912, guid: 520bf4513303cd343a7193464f1c9bdb,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896691783459239941, guid: 520bf4513303cd343a7193464f1c9bdb,
-        type: 3}
-      propertyPath: m_TagString
-      value: Weapon
-      objectReference: {fileID: 0}
-    - target: {fileID: 4896691783350276301, guid: 520bf4513303cd343a7193464f1c9bdb,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 520bf4513303cd343a7193464f1c9bdb, type: 3}
