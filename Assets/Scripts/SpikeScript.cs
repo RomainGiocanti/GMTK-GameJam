@@ -13,19 +13,23 @@ public class SpikeScript : MonoBehaviour
     {
         timerDf = timer;
         anim = GetComponent<Animator>();
+        anim.SetFloat("Spiker", timer);
     }
 
     void Update()
     {
-        if(timer >= 0)
+        if(GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow == false)
         {
-            timer -= Time.deltaTime;
-            anim.SetFloat("Spiker", timer);
-        }
-        if(timer <= 0)
-        {
-            anim.SetFloat("Spiker", timerDf);
-            timer = timerDf;
+            if (timer >= 0)
+            {
+                timer -= Time.deltaTime;
+                anim.SetFloat("Spiker", timer);
+            }
+            if (timer <= 0)
+            {
+                anim.SetFloat("Spiker", timerDf);
+                timer = timerDf;
+            }
         }
     }
 }
