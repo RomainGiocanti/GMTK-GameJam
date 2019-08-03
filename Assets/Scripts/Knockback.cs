@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Knockback : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    Rigidbody2D rb;
     public bool knockBack = false;
     public float force;
     private Vector2 knockDirection;
