@@ -23,14 +23,12 @@ public class LivingBeing : MonoBehaviour
             unity == UnityType.player && collision.gameObject.CompareTag("eHit"))
         {
             life -= collision.gameObject.GetComponent<LivingBeing>().damage;
-        }
-
-        if (unity == UnityType.enemy && collision.gameObject.CompareTag("Arrow"))
+        } else if 
+            (unity == UnityType.enemy && collision.gameObject.CompareTag("Arrow"))
         {
             life -= GameObject.FindGameObjectWithTag("Player").GetComponent<LivingBeing>().damage;
-        }
-
-        if (unity == UnityType.barrel && collision.gameObject.CompareTag("Arrow"))
+        } else if
+            (unity == UnityType.barrel && collision.gameObject.CompareTag("Arrow"))
         {
             Destroy(gameObject, 1.5f);
         }

@@ -7,6 +7,7 @@ TagManager:
   - Arrow
   - Weapon
   - eHit
+  - Enemy
   layers:
   - Default
   - TransparentFX
