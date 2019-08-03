@@ -74,7 +74,9 @@
 								<StateRef Name="Yes" ID="{A53CB537-8A6A-42CD-89EA-901F47749CEE}"/>
 								<CustomState Name="" ID="{652BBF3C-53D5-4A48-BD69-A50496081B8A}" ShortID="582181413">
 									<PropertyList>
-										<Property Name="Highpass" Type="int16" Value="49"/>
+										<Property Name="Highpass" Type="int16" Value="50"/>
+										<Property Name="Lowpass" Type="int16" Value="40"/>
+										<Property Name="Volume" Type="Real64" Value="-3"/>
 									</PropertyList>
 								</CustomState>
 							</CustomState>
