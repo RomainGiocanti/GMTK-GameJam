@@ -23,6 +23,7 @@ public class LivingBeing : MonoBehaviour
             unity == UnityType.player && collision.gameObject.CompareTag("eHit"))
         {
             life -= collision.gameObject.GetComponent<LivingBeing>().damage;
+            GameObject.FindGameObjectWithTag("Player").GetComponent<Knockback>().knockBack = true;
         } else if 
             (unity == UnityType.enemy && collision.gameObject.CompareTag("Arrow"))
         {
