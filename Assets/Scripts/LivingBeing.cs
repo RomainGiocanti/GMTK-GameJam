@@ -22,17 +22,29 @@ public class LivingBeing : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (unity == UnityType.player && collision.gameObject.CompareTag("Enemy") ||
-            unity == UnityType.player && collision.gameObject.CompareTag("eHit"))
+            unity == UnityType.player && collision.gameObject.CompareTag("eHit")
+            )
         {
             life -= collision.gameObject.GetComponent<LivingBeing>().damage;
-        } else if 
-            (unity == UnityType.enemy && collision.gameObject.CompareTag("Arrow"))
+        }
+        else if
+          (unity == UnityType.enemy && collision.gameObject.CompareTag("Arrow"))
         {
             life -= GameObject.FindGameObjectWithTag("Player").GetComponent<LivingBeing>().damage;
-        } else if
-            (unity == UnityType.barrel && collision.gameObject.CompareTag("Arrow"))
+        }
+        else if
+          (unity == UnityType.barrel && collision.gameObject.CompareTag("Arrow"))
         {
             Destroy(gameObject, 1.5f);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (unity == UnityType.player && collision.gameObject.CompareTag("Spike"))
+        {
+            Debug.Log("pass");
+            life -= collision.gameObject.GetComponent<LivingBeing>().damage;
         }
     }
 }
