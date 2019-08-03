@@ -32,6 +32,10 @@ public class Knockback : MonoBehaviour
         {
             knockDirection = (collision.transform.position - transform.position).normalized;
             knockBack = true;
+            if (transform.position == collision.transform.position)
+            {
+                knockDirection = transform.right;
+            }
         }
     }
 
