@@ -8,7 +8,13 @@ public class ShootingScript : MonoBehaviour
     public GameObject arrowPrefab;
     public float offset;
     public bool hasArrow = true;
+    public float buttonHold = 1f;
+    private float buttonHoldDefault;
 
+    private void Start()
+    {
+        buttonHoldDefault = buttonHold;
+    }
     void Update()
     {
 
@@ -16,16 +22,36 @@ public class ShootingScript : MonoBehaviour
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
 
-            if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButton("Fire1"))
+        {
+            if (buttonHold > 0)
             {
-            if(hasArrow == true)
+                buttonHold -= Time.deltaTime;
+            }
+
+            if (hasArrow == true && buttonHold <= 0)
+            {
+                Shoot();
+                hasArrow = false;
+            }
+            if (hasArrow)
+            {
+                Time.timeScale = 0;
+            }
+        }
+        if (Input.GetButtonUp("Fire1"))
+        {
+            if (hasArrow == true)
                 Shoot();
             hasArrow = false;
-            }
-    }
 
-    void Shoot()
-    {
-        Instantiate(arrowPrefab, firepoint.position, firepoint.rotation);
+        }
+
+        void Shoot()
+        {
+            Instantiate(arrowPrefab, firepoint.position, firepoint.rotation);
+            buttonHold = buttonHoldDefault;
+            Time.timeScale = 1;
+        }
     }
 }
