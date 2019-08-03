@@ -7,49 +7,37 @@ public class Arrow : MonoBehaviour
     public float speed = 1f;
     public Rigidbody2D rb;
     public float slowDown = 5f;
-    public float decreasingValue;
-    public float timeToStartSlow = 2f;
-    bool slowingDown = false;
+    public float lower = 2f;
 
+    void Start()
+    {
+        rb.velocity = transform.right * speed;
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         speed = 0f;
+        Debug.Log("Hit");
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow = true;
+            Debug.Log("Hit");
+        }
     }
     private void Update()
     {
-        ArrowSpeed();
-    }
-
-    void ArrowSpeed()
-    {
-        if (!slowingDown)
+        if (slowDown >= 0)
         {
+            slowDown -= Time.deltaTime;
+        }
+        if(slowDown <= 0)
+        {
+            speed = 0f;
             rb.velocity = transform.right * speed;
-
-            timeToStartSlow -= Time.deltaTime;
-        }
-
-        if (timeToStartSlow <= 0)
+        } else
         {
-            slowingDown = true;
+            rb.velocity = transform.right / lower;
         }
-
-        if (slowingDown)
-        {
-            if (speed > 0)
-            {
-                rb.velocity = transform.right * speed;
-
-                speed -= decreasingValue;
-
-                print(speed);
-            }
-
-            else if(speed <= 0)
-            {
-                rb.velocity = Vector2.zero;
-            }
-        }
-
+        Debug.Log(rb.velocity + "");
     }
 }
