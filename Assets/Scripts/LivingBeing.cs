@@ -9,6 +9,8 @@ public class LivingBeing : MonoBehaviour
     public int life;
     [Range(0, 10)]
     public float speed;
+    [Range(0, 10)]
+    public float newSpeed;
     [Range(0, 3)]
     public int damage;
 
