@@ -16,12 +16,12 @@ public class Arrow : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         speed = 0f;
-        Debug.Log("Hit");
         if(collision.gameObject.CompareTag("Player"))
         {
-            Destroy(gameObject);
             GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow = true;
-            Debug.Log("Hit");
+            GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().buttonHold =
+                GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().buttonHoldDefault;
+            Destroy(gameObject);
         }
     }
     private void Update()
@@ -38,6 +38,5 @@ public class Arrow : MonoBehaviour
         {
             rb.velocity = transform.right / lower;
         }
-        Debug.Log(rb.velocity + "");
     }
 }

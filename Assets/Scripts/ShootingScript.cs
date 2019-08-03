@@ -13,12 +13,13 @@ public class ShootingScript : MonoBehaviour
     public bool hasArrow = true;
     public float buttonHold = 1f;
     float maximumHoldTime;
-    private float buttonHoldDefault;
+    [HideInInspector] public float buttonHoldDefault;
 
     private void Start()
     {
         buttonHoldDefault = buttonHold;
         maximumHoldTime = buttonHoldDefault;
+        shootingCanvas.SetActive(false);
     }
     void Update()
     {
@@ -30,31 +31,39 @@ public class ShootingScript : MonoBehaviour
         {
             if (buttonHold >= 0)
             {
+                shootingCanvas.SetActive(true);
                 buttonHold -= Time.deltaTime;
                 timerBar.fillAmount = buttonHold / maximumHoldTime;
+                if (buttonHold <= maximumHoldTime / 2) timerBar.color = Color.red;
             }
 
             if (hasArrow == true && buttonHold <= 0)
             {
-                shootingCanvas.SetActive(true);
+                shootingCanvas.SetActive(false);
                 Shoot();
                 hasArrow = false;
             }
-            
+
         }
         if (Input.GetButtonUp("Fire1"))
         {
+
             if (hasArrow == true)
+            {
+                buttonHold = buttonHoldDefault;
                 Shoot();
-            hasArrow = false;
-            shootingCanvas.SetActive(false);
+                hasArrow = false;
+                shootingCanvas.SetActive(false);
+            }
+
 
         }
+        
 
         void Shoot()
         {
             Instantiate(arrowPrefab, firepoint.position, firepoint.rotation);
-            buttonHold = buttonHoldDefault;
+            timerBar.color = Color.yellow;
         }
     }
 }
