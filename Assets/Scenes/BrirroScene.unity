@@ -502,6 +502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2091518519}
   - component: {fileID: 2091518518}
+  - component: {fileID: 2091518521}
   - component: {fileID: 2091518520}
   - component: {fileID: 2091518517}
   m_Layer: 0
@@ -604,6 +605,18 @@ MonoBehaviour:
     positionOffset: {x: 0, y: 0, z: 0}
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!114 &2091518521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091518516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a1e6962412dc74b9b4f9f5ac48891c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4807820276125370775
 PrefabInstance:
   m_ObjectHideFlags: 0
