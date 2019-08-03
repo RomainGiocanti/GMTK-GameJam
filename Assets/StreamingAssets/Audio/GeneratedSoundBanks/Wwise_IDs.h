@@ -11,6 +11,37 @@
 
 namespace AK
 {
+    namespace EVENTS
+    {
+        static const AkUniqueID MAIN_MUSIC = 63796330U;
+    } // namespace EVENTS
+
+    namespace STATES
+    {
+        namespace PLAYERALIVE
+        {
+            static const AkUniqueID GROUP = 2557321869U;
+
+            namespace STATE
+            {
+                static const AkUniqueID ALIVE = 655265632U;
+                static const AkUniqueID DEAD = 2044049779U;
+            } // namespace STATE
+        } // namespace PLAYERALIVE
+
+        namespace PLAYERHASARROW
+        {
+            static const AkUniqueID GROUP = 3178051409U;
+
+            namespace STATE
+            {
+                static const AkUniqueID NO = 1668749452U;
+                static const AkUniqueID YES = 979470758U;
+            } // namespace STATE
+        } // namespace PLAYERHASARROW
+
+    } // namespace STATES
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;

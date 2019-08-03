@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2A05F380-9BB3-4625-A776-465E0A97008E}" SchemaVersion="94">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{2A05F380-9BB3-4625-A776-465E0A97008E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2A05F380-9BB3-4625-A776-465E0A97008E}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="PlayerHasArrow" ID="{A9911476-0787-42FE-8656-28EC2A81866B}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{BBBB0D60-71A3-4907-B5C8-FBE0783D62AE}"/>
+						<State Name="Yes" ID="{A53CB537-8A6A-42CD-89EA-901F47749CEE}"/>
+						<State Name="No" ID="{87C20B30-39E2-42FF-AE53-2C08AAFA8AF7}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="PlayerAlive" ID="{8829F4DD-B684-45BE-A99F-343719919CD8}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{31CBE517-C79B-4201-AE87-2D866A9EDE55}"/>
+						<State Name="Alive" ID="{8114760C-F48F-4FAE-A9BA-9B50038A34E9}"/>
+						<State Name="Dead" ID="{3B580FAF-27DB-408C-8272-2143CC7353A2}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

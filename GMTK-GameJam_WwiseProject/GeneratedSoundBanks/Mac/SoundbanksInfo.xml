@@ -20,6 +20,15 @@
 			<ObjectPath>\SoundBanks\Default Work Unit\main</ObjectPath>
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="63796330" Name="main_music" ObjectPath="\Events\Default Work Unit\main_music" DurationType="OneShot" DurationMin="88.888893" DurationMax="88.888893"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="237869858" Language="SFX">
+					<ShortName>Main Level Theme.wav</ShortName>
+					<Path>SFX\Main Level Theme_D79FB2B7.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>
