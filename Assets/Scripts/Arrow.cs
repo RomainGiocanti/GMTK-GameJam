@@ -32,15 +32,12 @@ public class Arrow : MonoBehaviour
         }
         if(slowDown <= 0)
         {
-            speed = 0f;
-            rb.velocity = transform.right * speed;
-        } else
-        {
-            if(speed >= 0)
+            if (speed >= 0)
             {
                 speed -= decreaseValue;
             }
-            if(speed < 0)
+
+            if (speed < 0)
             {
                 speed = 0;
             }
