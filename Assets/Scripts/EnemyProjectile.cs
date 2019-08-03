@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyProjectile : MonoBehaviour
+public class EnemyProjectile : LivingBeing
 {
 
     private Vector3 m_Direction = Vector3.zero;
@@ -26,7 +26,7 @@ public class EnemyProjectile : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (go && go.GetComponent<PlayerController>().GetComponent<ShootingScript>().hasArrow)
+        if (go && go.GetComponent<PlayerController>() && go.GetComponent<PlayerController>().GetComponent<ShootingScript>() && go.GetComponent<PlayerController>().GetComponent<ShootingScript>().hasArrow)
         {
             return;
         }

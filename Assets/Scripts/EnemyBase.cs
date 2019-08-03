@@ -76,7 +76,7 @@ public abstract class EnemyBase : LivingBeing
             Patrolling();
         }
 
-        ObstacleAvoidance();
+        //ObstacleAvoidance();
         // perform steering behavior
     }
 
@@ -118,7 +118,7 @@ public abstract class EnemyBase : LivingBeing
 
     protected bool CloseToGoal(Vector3 _Goal)
     {
-        return Vector3.Distance(transform.position, _Goal) < 0.01;
+        return Vector3.Distance(transform.position, _Goal) < 0.1;
     }
 
     //not useful now
