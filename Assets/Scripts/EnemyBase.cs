@@ -49,7 +49,7 @@ public abstract class EnemyBase : LivingBeing
     // Update is called once per frame
     protected void Update()
     {
-        if (go && go.GetComponent<PlayerController>().GetComponent<ShootingScript>().hasArrow)
+        if (go && go.GetComponent<PlayerController>() && go.GetComponent<PlayerController>().GetComponent<ShootingScript>() && go.GetComponent<PlayerController>().GetComponent<ShootingScript>().hasArrow)
         {
             return;
         }
