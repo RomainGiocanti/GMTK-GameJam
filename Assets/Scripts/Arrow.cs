@@ -21,10 +21,17 @@ public class Arrow : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         speed = 0f;
+        rb.velocity = Vector2.zero;
         anim.SetTrigger("Hit");
         arrowFeedBack.Invoke();
         if(collision.gameObject.CompareTag("Player"))
         {
+            GameObject[] Spikes = GameObject.FindGameObjectsWithTag("Spike");
+            foreach(GameObject spike in Spikes)
+            {
+                spike.GetComponent<SpikeScript>().timer = spike.GetComponent<SpikeScript>().timerDf;
+                spike.GetComponent<SpikeScript>().GetComponent<Animator>().SetFloat("Spiker", spike.GetComponent<SpikeScript>().timerDf);
+            }
             GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow = true;
             GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().buttonHold =
                 GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().buttonHoldDefault;

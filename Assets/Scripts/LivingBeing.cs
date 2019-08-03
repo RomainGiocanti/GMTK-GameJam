@@ -43,7 +43,7 @@ public class LivingBeing : MonoBehaviour
     {
         if (unity == UnityType.player && collision.gameObject.CompareTag("Spike"))
         {
-            Debug.Log("pass");
+            
             life -= collision.gameObject.GetComponent<LivingBeing>().damage;
         }
     }

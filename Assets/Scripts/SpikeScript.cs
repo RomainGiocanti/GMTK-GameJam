@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpikeScript : MonoBehaviour
+public class SpikeScript : LivingBeing
 {
     Animator anim;
     public float timer;
-    float timerDf;
+    [HideInInspector] public float timerDf;
 
 
     void Start()
