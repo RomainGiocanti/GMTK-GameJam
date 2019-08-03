@@ -31,6 +31,7 @@ public class LivingBeing : MonoBehaviour
           (unity == UnityType.enemy && collision.gameObject.CompareTag("Arrow"))
         {
             life -= GameObject.FindGameObjectWithTag("Player").GetComponent<LivingBeing>().damage;
+            if (life <= 0) Destroy(gameObject, 1.5f);
         }
         else if
           (unity == UnityType.barrel && collision.gameObject.CompareTag("Arrow"))
