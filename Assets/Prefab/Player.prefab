@@ -155,7 +155,7 @@ SpriteRenderer:
   m_Size: {x: 0.04, y: 0.04}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &2717326480775373910
@@ -214,12 +214,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2717326480775373907}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1219637f839b8cc44b3519732b7417d2, type: 3}
+  m_Script: {fileID: 11500000, guid: 2be780fb0430f844ab40829beda7a2f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   unity: 0
-  life: 0
-  speed: 5.2
+  life: 1
+  speed: 2.31
+  newSpeed: 0
   damage: 0
 --- !u!1 &2717326481273084048
 GameObject:
@@ -578,17 +579,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 2717326482761121119}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f303127458044314586acd841557e686, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e58e7b56cf01e94da72ff542b4a0e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   shootingCanvas: {fileID: 2717326482652222871}
   timerBar: {fileID: 2717326482024433782}
   firepoint: {fileID: 2717326481924794059}
-  arrowPrefab: {fileID: 8105468668494592779, guid: 6deb61002f04f4749825d1c64e6e483e,
+  arrowPrefab: {fileID: 8105468668494592779, guid: 9a3e772bc6509ca4fa43e8e8b85e6071,
     type: 3}
   offset: 0
   hasArrow: 1
-  buttonHold: 2.5
+  buttonHold: 1
   buttonHoldDefault: 0
 --- !u!212 &2717326482761121089
 SpriteRenderer:
@@ -635,6 +636,6 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
