@@ -8,28 +8,38 @@ public class Knockback : MonoBehaviour
     public bool knockBack = false;
     public float force;
     private Vector2 knockDirection;
-
+    [Range(0, 0.25f)]
+    public float knocktime;
+    float knockTimeDf;
     private void Start()
     {
-        rb = this.GetComponent<Rigidbody2D> ();
+        rb = GetComponent<Rigidbody2D> ();
+        knockTimeDf = knocktime;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("If failed");
         if (collision.gameObject.CompareTag("Enemy") ||
              collision.gameObject.CompareTag("eHit"))
         {
-                        knockDirection = (collision.transform.position - transform.position).normalized;
-            Debug.Log("Collision");
+            knockDirection = (collision.transform.position - transform.position).normalized;
+            knockBack = true;
         }
     }
+
     private void Update()
     {
+        
         if (knockBack == true)
         {
-            rb.AddForce(-knockDirection * force, ForceMode2D.Impulse);
+            rb.velocity = -knockDirection * force;
+            knocktime -= Time.deltaTime;
+        }
+        if (knocktime <= 0)
+        {
+            rb.velocity = Vector2.zero;
             knockBack = false;
+            knocktime = knockTimeDf;
         }
     }
 }

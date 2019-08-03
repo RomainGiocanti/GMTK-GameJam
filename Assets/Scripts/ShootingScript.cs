@@ -27,7 +27,7 @@ public class ShootingScript : MonoBehaviour
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
 
-        if (Input.GetButton("Fire1"))
+        if (Input.GetButton("Fire1") && hasArrow == true)
         {
             if (buttonHold >= 0)
             {
@@ -37,7 +37,7 @@ public class ShootingScript : MonoBehaviour
                 if (buttonHold <= maximumHoldTime / 4) timerBar.color = Color.red;
             }
 
-            if (hasArrow == true && buttonHold <= 0)
+            if (buttonHold <= 0)
             {
                 shootingCanvas.SetActive(false);
                 Shoot();

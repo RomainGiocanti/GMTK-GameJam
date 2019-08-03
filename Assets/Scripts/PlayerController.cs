@@ -16,24 +16,25 @@ public class PlayerController : LivingBeing
 
     void Update()
     {
-        Vector2 mi = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        mv = mi.normalized * speed;
-        if(GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow == true)
+        if(transform.GetComponent<Knockback>().knockBack == false)
         {
-            speed = newSpeed;
-        } else if (GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow == false)
-        {
-            speed = defaultSpeed;
+            Vector2 mi = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+            mv = mi.normalized * speed;
+            if (GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow == true)
+            {
+                speed = newSpeed;
+            }
+            else if (GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow == false)
+            {
+                speed = defaultSpeed;
+            }
         }
     }
 
     private void FixedUpdate()
     {
-        rb.MovePosition(rb.position + mv * Time.fixedDeltaTime);
+        if (transform.GetComponent<Knockback>().knockBack == false)
+            rb.MovePosition(rb.position + mv * Time.fixedDeltaTime);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        Debug.Log("Collision");
-    }
 }
