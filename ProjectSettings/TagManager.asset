@@ -9,6 +9,7 @@ TagManager:
   - eHit
   - Enemy
   - Spike
+  - Obstacle
   layers:
   - Default
   - TransparentFX
