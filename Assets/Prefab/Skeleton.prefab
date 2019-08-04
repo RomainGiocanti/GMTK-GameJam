@@ -93,7 +93,7 @@ Animator:
   m_GameObject: {fileID: 8902304269782946408}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 55c035edc91bc9b4db4458c790478017, type: 2}
+  m_Controller: {fileID: 9100000, guid: af5f86a986488d04ab2c56255388d20f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_Offset: {x: 0.012745738, y: 0.46732494}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0, y: 0}
     oldSize: {x: 0.5625, y: 0.8125}
     newSize: {x: 0.5625, y: 0.8125}
     adaptiveTilingThreshold: 0.5
@@ -145,19 +145,18 @@ MonoBehaviour:
   speed: 0
   newSpeed: 0
   damage: 1
-  m_MoveSpeed: 0.04
-  m_ChaseSpeed: 0.06
+  m_MoveSpeed: 0.02
+  m_ChaseSpeed: 0.04
   m_MaxLife: 3
   m_CurrentLife: 3
   m_AttackDamages: 1
   m_Sprite: {fileID: 0}
   m_TimeToDestroy: 1.5
-  m_DebugPlayer: {fileID: 0}
-  m_ReloadTime: 1
-  m_AttackRange: 3.65
+  m_DebugPlayer: {fileID: 7425640944971675447, guid: 65fe1fd0b3a5eaa49a7c3bb20537f170,
+    type: 3}
+  m_ReloadTime: 2.5
+  m_AttackRange: 3
   m_PatrolPoints:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   test: 0
