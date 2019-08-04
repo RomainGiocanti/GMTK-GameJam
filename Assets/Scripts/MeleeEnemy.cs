@@ -37,6 +37,10 @@ public class MeleeEnemy : EnemyBase
     private Vector2 m_PrevPos;
     private Vector2 m_Velocity = Vector2.zero;
 
+    private RaycastHit2D m_Hit;
+
+    Vector2 m_TestTest = Vector2.zero;
+
     // Start is called before the first frame update
     new void Start()
     {
@@ -280,7 +284,13 @@ public class MeleeEnemy : EnemyBase
             {
                 if (ObstacleBetweenEnemyAndPlayer(obstacleToDodge))
                 {
-                    // we adapt the way we move
+                    //obstacleToDodge.GetComponent<Collider2D>().
+                    // m_Hit -> contient ce qui a été hhited
+
+                    //Vector3 up = m_Hit.transform.up;
+                    //Vector3 enemyToObject = transform.position - obstacleToDodge.transform.position;
+                    //Vector2 test = Vector3.Cross(up, enemyToObject);
+                    //m_TestTest = test;
 
 
                 }
@@ -294,13 +304,15 @@ public class MeleeEnemy : EnemyBase
         Vector2 raycastDirection = m_DebugPlayer.transform.position - transform.position;
         raycastDirection.Normalize();
 
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, raycastDirection, 10);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, raycastDirection, 100);
 
         if (hit.collider && hit.collider.CompareTag("Obstacle"))
         {
-            Debug.Log("hit OBject : " + hit.collider.name);
+            //Debug.Log("hit OBject : " + hit.collider.name);
+            m_Hit = hit;
             return true;
         }
+
 
         return false;
     }
@@ -308,6 +320,12 @@ public class MeleeEnemy : EnemyBase
     public float GetMeleeAttaxkRange()
     {
         return m_MeleeAttackRange;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        //Gizmos.DrawRay()
     }
 
 }

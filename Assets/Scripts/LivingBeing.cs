@@ -20,9 +20,9 @@ public class LivingBeing : MonoBehaviour
     }
 
     protected void Update()
-    { 
+    {
         Debug.Log("life : " + life);
-        if (life <= 0)
+        if (life <= 0 && tag != "Obstacle")
         {
             if (GetComponent<EnemyBase>())
             {
@@ -38,7 +38,7 @@ public class LivingBeing : MonoBehaviour
             unity == UnityType.player && collision.gameObject.CompareTag("eHit")
             )
         {
-            life -= collision.gameObject.GetComponent<LivingBeing>().damage;
+            //life -= collision.gameObject.GetComponent<LivingBeing>().damage;
 
             if (unity == UnityType.player && collision.gameObject.CompareTag("eHit"))
             {
@@ -51,26 +51,34 @@ public class LivingBeing : MonoBehaviour
 
             life -= GameObject.FindGameObjectWithTag("Player").GetComponent<LivingBeing>().damage;
 
-            //if (gameObject.GetComponent<MeleeEnemy>())
-            //{
-            //    gameObject.GetComponent<MeleeEnemy>().SetUpHitedAnimation();
-            //}
-            //else if (gameObject.GetComponent<RangedEnemy>())
-            //{
-            //    gameObject.GetComponent<RangedEnemy>().SetUpHitedAnimation();
-            //}
-
             if (gameObject.GetComponent<EnemyBase>())
             {
                 gameObject.GetComponent<EnemyBase>().SetUpHitedAnimation();
             }
+            collision.gameObject.GetComponent<Arrow>().PlayHitSound();
+
+
+            ///
+            // AkSoundEngine.PostEvent("arrow_hit", gameObject);
+            ///
         }
         else if
           (unity == UnityType.barrel && collision.gameObject.CompareTag("Arrow"))
         {
             Destroy(gameObject, 1.5f);
         }
+        else if (collision.gameObject.CompareTag("Arrow") && transform.CompareTag("Obstacle"))
+        {
+            Debug.Log("hit obstacle or decor");
+            ///
+            //AkSoundEngine.PostEvent("arrow_bounce", gameObject);
+            ///
+            collision.gameObject.GetComponent<Arrow>().PlayBounceSound();
+        }
     }
+
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -80,4 +88,5 @@ public class LivingBeing : MonoBehaviour
             life -= collision.gameObject.GetComponent<LivingBeing>().damage;
         }
     }
+
 }

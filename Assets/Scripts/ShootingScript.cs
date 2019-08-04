@@ -14,12 +14,15 @@ public class ShootingScript : MonoBehaviour
     public float buttonHold = 1f;
     float maximumHoldTime;
     [HideInInspector] public float buttonHoldDefault;
+    GameObject m_SoundManager;
+
 
     private void Start()
     {
         buttonHoldDefault = buttonHold;
         maximumHoldTime = buttonHoldDefault;
         shootingCanvas.SetActive(false);
+        //m_SoundManager = GameObject.Find("");
     }
 
 
@@ -29,9 +32,16 @@ public class ShootingScript : MonoBehaviour
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, rotZ + offset);
 
+        //if (Input.GetKeyDown("Fire1") && hasArrow)
+        //{
+        //    ///
+        //    // AkSoundEngine.PostEvent("arrow_tension", gameObject);
+        //    ///
+        //}
+
         if (Input.GetButton("Fire1") && hasArrow == true)
         {
-            
+
             if (buttonHold >= 0)
             {
                 shootingCanvas.SetActive(true);
@@ -61,13 +71,18 @@ public class ShootingScript : MonoBehaviour
 
 
         }
-        
+
 
         void Shoot()
         {
             Instantiate(arrowPrefab, firepoint.position, firepoint.rotation);
             timerBar.color = Color.yellow;
-            AkSoundEngine.PostEvent("arrow_shot", gameObject);
+
+
+
+            ///
+            //AkSoundEngine.PostEvent("arrow_shot", gameObject);
+            ///
         }
     }
 }

@@ -12,11 +12,19 @@ public class Arrow : MonoBehaviour
     public float decreaseValue;
     public UnityEvent arrowFeedBack;
     Animator anim;
+    GameObject m_SoundManager;
+    [SerializeField] private AudioClip m_PickUpSound;
+    [SerializeField] private AudioClip m_HitSound;
+    [SerializeField] private AudioClip m_BounceSound;
+    [SerializeField] private AudioClip m_ShotSound;
+    [SerializeField] private AudioClip m_TensionSound;
 
     void Start()
     {
         rb.velocity = transform.right * speed;
         anim = GetComponent<Animator>();
+
+        m_SoundManager = GameObject.Find("SoundManager");
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -39,16 +47,27 @@ public class Arrow : MonoBehaviour
             GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().hasArrow = true;
             GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().buttonHold =
                 GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().buttonHoldDefault;
+
+            ///
+            //AkSoundEngine.PostEvent("arrow_pickup", gameObject);
+            ///
+
+            if (m_SoundManager.GetComponent<SoundManager>())
+            {
+                m_SoundManager.GetComponent<SoundManager>().PlayOneShot(m_PickUpSound);
+            }
+
             Destroy(gameObject);
+
         }
-        }
+    }
     private void Update()
     {
         if (slowDown >= 0)
         {
             slowDown -= Time.deltaTime;
         }
-        if(slowDown <= 0)
+        if (slowDown <= 0)
         {
             if (speed >= 0)
             {
@@ -60,13 +79,38 @@ public class Arrow : MonoBehaviour
                 speed = 0;
                 transform.GetComponent<Collider2D>().isTrigger = true;
                 anim.SetTrigger("Hit");
-                if(played == 1)
+                if (played == 1)
                 {
-                   arrowFeedBack.Invoke();
+                    arrowFeedBack.Invoke();
                     played--;
                 }
             }
             rb.velocity = transform.right * speed;
         }
     }
+
+    public void PlayHitSound()
+    {
+        if (m_SoundManager.GetComponent<SoundManager>())
+        {
+            m_SoundManager.GetComponent<SoundManager>().PlayOneShot(m_HitSound);
+        }
+    }
+
+    public void PlayBounceSound()
+    {
+        if (m_SoundManager.GetComponent<SoundManager>())
+        {
+            m_SoundManager.GetComponent<SoundManager>().PlayOneShot(m_BounceSound);
+        }
+    }
+
+    public void PlayShotSound()
+    {
+        if (m_SoundManager.GetComponent<SoundManager>())
+        {
+            m_SoundManager.GetComponent<SoundManager>().PlayOneShot(m_ShotSound);
+        }
+    }
+
 }
