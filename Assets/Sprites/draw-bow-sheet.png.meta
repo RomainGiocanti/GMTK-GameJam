@@ -1,0 +1,952 @@
+fileFormatVersion: 2
+guid: 2c9b8ef7a818f0345a9d05e424b922e3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3389525288251202797
+    second: draw-bow-sheet_0
+  - first:
+      213: -5786312706840349487
+    second: draw-bow-sheet_1
+  - first:
+      213: -4947534147422574601
+    second: draw-bow-sheet_2
+  - first:
+      213: 2397827483180066914
+    second: draw-bow-sheet_3
+  - first:
+      213: -1890371262775648952
+    second: draw-bow-sheet_4
+  - first:
+      213: -4532644677431794255
+    second: draw-bow-sheet_5
+  - first:
+      213: 7010243699288602178
+    second: draw-bow-sheet_6
+  - first:
+      213: 5690151918557840827
+    second: draw-bow-sheet_7
+  - first:
+      213: -686915429232025175
+    second: draw-bow-sheet_8
+  - first:
+      213: -7148218779593731537
+    second: draw-bow-sheet_9
+  - first:
+      213: 2299533685702305263
+    second: draw-bow-sheet_10
+  - first:
+      213: 1367776430488784308
+    second: draw-bow-sheet_11
+  - first:
+      213: -7117977320718637908
+    second: draw-bow-sheet_12
+  - first:
+      213: 1601715846878985496
+    second: draw-bow-sheet_13
+  - first:
+      213: 345578383583208440
+    second: draw-bow-sheet_14
+  - first:
+      213: 5357747967237258386
+    second: draw-bow-sheet_15
+  - first:
+      213: -8783583229070573022
+    second: draw-bow-sheet_16
+  - first:
+      213: 8872889644085413589
+    second: draw-bow-sheet_17
+  - first:
+      213: -529296559698497227
+    second: draw-bow-sheet_18
+  - first:
+      213: 3776299760457317474
+    second: draw-bow-sheet_20
+  - first:
+      213: 4198267895265106461
+    second: draw-bow-sheet_21
+  - first:
+      213: -1662737282144398070
+    second: draw-bow-sheet_22
+  - first:
+      213: 7013906175806578004
+    second: draw-bow-sheet_23
+  - first:
+      213: -4309667219760891018
+    second: draw-bow-sheet_24
+  - first:
+      213: 3471967374158086191
+    second: draw-bow-sheet_25
+  - first:
+      213: -3667592258532419365
+    second: draw-bow-sheet_26
+  - first:
+      213: -6978503633762730065
+    second: draw-bow-sheet_27
+  - first:
+      213: -5809923644382720781
+    second: draw-bow-sheet_28
+  - first:
+      213: -7308012967845718364
+    second: draw-bow-sheet_29
+  - first:
+      213: -8153869584466967785
+    second: draw-bow-sheet_30
+  - first:
+      213: -5961330540620714002
+    second: draw-bow-sheet_31
+  - first:
+      213: -5705924618218506992
+    second: draw-bow-sheet_32
+  - first:
+      213: -1132205749768057077
+    second: draw-bow-sheet_33
+  - first:
+      213: 2044140363939820734
+    second: draw-bow-sheet_34
+  - first:
+      213: -5435158704168093446
+    second: draw-bow-sheet_35
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: draw-bow-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 1
+        width: 13
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37212a44f8bf4a44bbc02a6cea35b88c
+      internalID: 3389525288251202797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 1
+        width: 19
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f670624bbc5103b48a47d31f845d4284
+      internalID: -5786312706840349487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 1
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffffaf0c8fb1b624ba6349883ef4ceb5
+      internalID: -4947534147422574601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 1
+        width: 23
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696b8ae81d0b8d84788cb8481a0836ce
+      internalID: 2397827483180066914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 1
+        width: 23
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39c5a4425e4eb544fb4ab29bebc0f3d7
+      internalID: -1890371262775648952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_5
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 1
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89b19b22ba3cff408625d55ec0c3c07
+      internalID: -4532644677431794255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_6
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 1
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2395d4ef7bdf53b4c8722105b34045f3
+      internalID: 7010243699288602178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_7
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd349ff65df8c2645b40cb65e78d508e
+      internalID: 5690151918557840827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 1
+        width: 23
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ae29c139b28bd4883681c552f9ab05
+      internalID: -686915429232025175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 1
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02274edb54d1ff54e8c37732edecfb16
+      internalID: -7148218779593731537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_10
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947aa43396107674987ba3a83c5e6a39
+      internalID: 2299533685702305263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_11
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 1
+        width: 22
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a40ec063d28d594796e95e295ebebf6
+      internalID: 1367776430488784308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_12
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1
+        width: 23
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a8bf573aba03a04e93e81cd6cdb5d98
+      internalID: -7117977320718637908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_13
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 1
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3913d96bd09d1df49be2488f3d9ab474
+      internalID: 1601715846878985496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_14
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 1
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03d776630b468e43966ea65b2002a56
+      internalID: 345578383583208440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_15
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 10
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5374e429a99b7d44785de5dc6f9c3738
+      internalID: 5357747967237258386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_16
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 1
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b80b473192d884abe077aa7e10c7a9
+      internalID: -8783583229070573022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_17
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 10
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f678ea7ec681f04292d74b09bc7dec1
+      internalID: 8872889644085413589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_18
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab5b6aaed000a749b2ce81711d0a662
+      internalID: -529296559698497227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_20
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 0
+        width: 24
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a0b7ab5c876b274db55915dfa36987b
+      internalID: 3776299760457317474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_21
+      rect:
+        serializedVersion: 2
+        x: 596
+        y: 0
+        width: 24
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b32c28e79438247a3a3d90f270f72f
+      internalID: 4198267895265106461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_22
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 1
+        width: 18
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2c80bfd9c2ac840bfeb8780e2e4023
+      internalID: -1662737282144398070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_23
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 2
+        width: 18
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f71dde82d496b3c48a608dae3c647bfd
+      internalID: 7013906175806578004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_24
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 1
+        width: 18
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3e81e5cd1c7384e8c82e3fbb57db1d
+      internalID: -4309667219760891018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_25
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 2
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43d15267572f28a43b67fffd852908f6
+      internalID: 3471967374158086191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_26
+      rect:
+        serializedVersion: 2
+        x: 770
+        y: 2
+        width: 18
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f80d2e0f9a0c74baef0a3dc9226ff5
+      internalID: -3667592258532419365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_27
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d107dcb43086f3f488baa6f3fc8ac5b4
+      internalID: -6978503633762730065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_28
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871ae027698f7874eaa9222944ba5244
+      internalID: -5809923644382720781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_29
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197640441931a5f4f8dfd59de2c5b9e5
+      internalID: -7308012967845718364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_30
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2fad081f9eac814aa369eee891ba099
+      internalID: -8153869584466967785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_31
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe006b579d74bd4fbdf5dc3dfebae10
+      internalID: -5961330540620714002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_32
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0957537d1179f44ae92064b743c5c7
+      internalID: -5705924618218506992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_33
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b38cf886a6aa7c344a19de3f63de38e0
+      internalID: -1132205749768057077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_34
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2106c8a6e31f58b4f9f1fec074469162
+      internalID: 2044140363939820734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: draw-bow-sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 3
+        width: 18
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85cceefb413dade4290eb18d0c13ef61
+      internalID: -5435158704168093446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bbb2f31680281a4498275c8d21b80578
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

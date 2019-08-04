@@ -1,43 +1,37 @@
 fileFormatVersion: 2
-guid: 21ddcae082752ae47911332e9259ee42
+guid: 94eb24a6b5883db4cb18ecd2059e0982
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6452884964439899304
-    second: playerFront_idle_run_0
+      213: 5764918423271565866
+    second: shoot-bow-sheet_0
   - first:
-      213: 5280190655679351552
-    second: playerFront_idle_run_1
+      213: 2782099159096018784
+    second: shoot-bow-sheet_1
   - first:
-      213: 1231502404071022888
-    second: playerFront_idle_run_2
+      213: -1575330034713559391
+    second: shoot-bow-sheet_2
   - first:
-      213: -2193005787041413913
-    second: playerFront_idle_run_3
+      213: -1708760431542478423
+    second: shoot-bow-sheet_3
   - first:
-      213: -7272850500495278384
-    second: playerFront_idle_run_4
+      213: -3931662187148409756
+    second: shoot-bow-sheet_4
   - first:
-      213: 5446759334351640423
-    second: playerFront_idle_run_5
+      213: 1668719836573070189
+    second: shoot-bow-sheet_5
   - first:
-      213: -5288924866384520850
-    second: playerFront_idle_run_6
+      213: -4964223138613109055
+    second: shoot-bow-sheet_6
   - first:
-      213: 5498172612783795241
-    second: playerFront_idle_run_7
+      213: 1645061633574513255
+    second: shoot-bow-sheet_7
   - first:
-      213: -1973189401071967432
-    second: playerFront_idle_run_8
+      213: 1140091340822843904
+    second: shoot-bow-sheet_8
   - first:
-      213: -5536760662639826515
-    second: playerFront_idle_run_9
-  - first:
-      213: -2811919115314419163
-    second: playerFront_idle_run_10
-  - first:
-      213: 7106955165120497612
-    second: playerFront_idle_run_11
+      213: -1640215356402172276
+    second: shoot-bow-sheet_9
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -77,11 +71,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 1
+  spriteExtrude: 0
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 9
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -131,11 +125,32 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playerFront_idle_run_0
+      name: shoot-bow-sheet_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 7
+        x: 1
+        y: 3
+        width: 21
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39eecb76dd6e5a24db5ba7e5a94c155e
+      internalID: 5764918423271565866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoot-bow-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 2
         width: 16
         height: 18
       alignment: 7
@@ -145,20 +160,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c00212de6fd57474b960234ce45c78ae
-      internalID: 6452884964439899304
+      spriteID: 12f3346e55407b448b7529d9134095a0
+      internalID: 2782099159096018784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFront_idle_run_1
+      name: shoot-bow-sheet_2
       rect:
         serializedVersion: 2
-        x: 41
-        y: 7
+        x: 49
+        y: 0
+        width: 11
+        height: 22
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99de52f091a2d15479d20cb0d20d11b0
+      internalID: -1575330034713559391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shoot-bow-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1
         width: 14
-        height: 18
+        height: 20
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,20 +202,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 735d83a5cad65df49b25e7c696c2bca1
-      internalID: 5280190655679351552
+      spriteID: a38934bb9ab3ca24fb674f41aa9e5b40
+      internalID: -1708760431542478423
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFront_idle_run_2
+      name: shoot-bow-sheet_4
       rect:
         serializedVersion: 2
-        x: 72
-        y: 7
-        width: 15
-        height: 17
+        x: 87
+        y: 0
+        width: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +223,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0823621863a5c20498a3ebd578f6c9d2
-      internalID: 1231502404071022888
+      spriteID: 870d046e5ba15b94581c2aaf662e0579
+      internalID: -3931662187148409756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFront_idle_run_3
+      name: shoot-bow-sheet_5
       rect:
         serializedVersion: 2
-        x: 104
-        y: 7
-        width: 16
-        height: 18
+        x: 105
+        y: 0
+        width: 9
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c161d0bd9dd33f047807579a188eca38
-      internalID: -2193005787041413913
+      spriteID: 557872c2e3f2361468901dce655520fb
+      internalID: 1668719836573070189
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFront_idle_run_4
+      name: shoot-bow-sheet_6
       rect:
         serializedVersion: 2
-        x: 135
-        y: 7
-        width: 17
-        height: 18
+        x: 120
+        y: 0
+        width: 13
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,20 +265,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c666c5d4bdcc164ebb80b120da40213
-      internalID: -7272850500495278384
+      spriteID: 02660452cb1f5e44683b5041ac81c873
+      internalID: -4964223138613109055
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFront_idle_run_5
+      name: shoot-bow-sheet_7
       rect:
         serializedVersion: 2
-        x: 168
-        y: 7
-        width: 16
-        height: 17
+        x: 141
+        y: 0
+        width: 11
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 25a45e86fda13a14a8c96f327307d056
-      internalID: 5446759334351640423
+      spriteID: 95670a5f0fb30c646ac5b0d13719bb8f
+      internalID: 1645061633574513255
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFront_idle_run_6
+      name: shoot-bow-sheet_8
       rect:
         serializedVersion: 2
-        x: 235
-        y: 9
-        width: 16
-        height: 17
+        x: 162
+        y: 0
+        width: 9
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,20 +307,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f93d3c1dce0a2ec49b82fb1ade720fc6
-      internalID: -5288924866384520850
+      spriteID: 06177401124fd144d9b2216a9c546bdc
+      internalID: 1140091340822843904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerFront_idle_run_7
+      name: shoot-bow-sheet_9
       rect:
         serializedVersion: 2
-        x: 265
-        y: 9
-        width: 17
-        height: 17
+        x: 181
+        y: 0
+        width: 9
+        height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,92 +328,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4319f638c479a0948b189b59dacd0113
-      internalID: 5498172612783795241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerFront_idle_run_8
-      rect:
-        serializedVersion: 2
-        x: 296
-        y: 7
-        width: 15
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c54f9a99dac6f994bb61d136b7bdc4de
-      internalID: -1973189401071967432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerFront_idle_run_9
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 9
-        width: 16
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c1dbf4fe02359f42b4f1848a6f7127b
-      internalID: -5536760662639826515
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerFront_idle_run_10
-      rect:
-        serializedVersion: 2
-        x: 358
-        y: 9
-        width: 17
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1ce1ac82fa6cac94c9a501a78eb80b70
-      internalID: -2811919115314419163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerFront_idle_run_11
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 7
-        width: 15
-        height: 17
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae597a551021a224eb0d1c3da709df15
-      internalID: 7106955165120497612
+      spriteID: aab1a1056256dc447a56ee1f6f1379c9
+      internalID: -1640215356402172276
       vertices: []
       indices: 
       edges: []
@@ -385,7 +337,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f8b033ec62f37a144bf8ddff4a162159
+    spriteID: 624d9ca8462de3b439c41561261368dc
     internalID: 0
     vertices: []
     indices: 
