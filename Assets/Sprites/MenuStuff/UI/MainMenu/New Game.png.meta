@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 88ff803c77660f34988bcd15e0815cc8
+guid: 29a8a8d575aadc54ca3d0eaa86865bd5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2650747550981085840
-    second: Arrow_inair_0
-  - first:
-      213: -5782641981124653903
-    second: Arrow_inair_1
-  - first:
-      213: -1214891091861424389
-    second: Arrow_inair_2
+      213: 4694879556540525814
+    second: New Game_0
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -40,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -54,8 +48,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 1338, y: 538, z: 279, w: 525}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -137,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arrow_inair_0
+      name: New Game_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 5
-        width: 16
-        height: 7
+        x: 1345
+        y: 544
+        width: 414
+        height: 82
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,50 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0579751c3b58544e9bf07b79066854f
-      internalID: -2650747550981085840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arrow_inair_1
-      rect:
-        serializedVersion: 2
-        x: 21
-        y: 5
-        width: 16
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0a6531774128cc241be05aed9dad1e03
-      internalID: -5782641981124653903
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Arrow_inair_2
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 6
-        width: 16
-        height: 5
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: da6759741ccc8aa4eb3e91a0b27bba27
-      internalID: -1214891091861424389
+      spriteID: 5c944a5b70a064f4693c8d96547d5cd7
+      internalID: 4694879556540525814
       vertices: []
       indices: 
       edges: []
@@ -202,7 +154,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: e62cfeccb4d1fba419149b9e82b438b2
+    spriteID: 691de61ddba74f142ab351c3ef0f5610
     internalID: 0
     vertices: []
     indices: 
