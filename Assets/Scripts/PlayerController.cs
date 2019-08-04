@@ -21,6 +21,8 @@ public class PlayerController : LivingBeing
         {
             anim.SetTrigger("Died");
             Destroy(gameObject, 1.5f);
+            speed = 0;
+            newSpeed = 0;
         
         }
         if (transform.GetComponent<Knockback>().knockBack == false)
