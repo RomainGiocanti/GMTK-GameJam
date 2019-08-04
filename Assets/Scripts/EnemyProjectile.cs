@@ -26,9 +26,16 @@ public class EnemyProjectile : LivingBeing
     // Update is called once per frame
     void Update()
     {
-        if (go && go.GetComponent<PlayerController>() && go.GetComponent<PlayerController>().GetComponent<ShootingScript>() && go.GetComponent<PlayerController>().GetComponent<ShootingScript>().hasArrow)
+        if (go)
         {
-            return;
+            if (go.GetComponent<PlayerController>().GetComponentInChildren<ShootingScript>())
+            {
+                if (go.GetComponent<PlayerController>().GetComponentInChildren<ShootingScript>().hasArrow)
+                {
+
+                    return;
+                }
+            }
         }
 
         Move();

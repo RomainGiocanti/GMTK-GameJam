@@ -19,6 +19,16 @@ public class LivingBeing : MonoBehaviour
         player, enemy, barrel, obj
     }
 
+    protected void Update()
+    {
+        Debug.Log("life : " + life);
+        if (life <= 0)
+        {
+            Destroy(gameObject, 1.5f);
+        }
+
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (unity == UnityType.player && collision.gameObject.CompareTag("Enemy") ||
@@ -26,12 +36,17 @@ public class LivingBeing : MonoBehaviour
             )
         {
             life -= collision.gameObject.GetComponent<LivingBeing>().damage;
+
+
         }
         else if
           (unity == UnityType.enemy && collision.gameObject.CompareTag("Arrow"))
         {
+
             life -= GameObject.FindGameObjectWithTag("Player").GetComponent<LivingBeing>().damage;
-            if (life <= 0) Destroy(gameObject, 1.5f);
+
+            gameObject.GetComponent<MeleeEnemy>().SetUpHitedAnimation();
+
         }
         else if
           (unity == UnityType.barrel && collision.gameObject.CompareTag("Arrow"))
@@ -44,7 +59,7 @@ public class LivingBeing : MonoBehaviour
     {
         if (unity == UnityType.player && collision.gameObject.CompareTag("Spike"))
         {
-            
+
             life -= collision.gameObject.GetComponent<LivingBeing>().damage;
         }
     }
