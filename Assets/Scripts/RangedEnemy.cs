@@ -42,7 +42,7 @@ public class RangedEnemy : EnemyBase
 
     private void Shoot(Vector3 _DirectionToShoot)
     {
-        Debug.Log("Shoot");
+        //Debug.Log("Shoot");
 
         Vector3 thisPos = transform.position;
 

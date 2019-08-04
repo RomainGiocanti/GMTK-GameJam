@@ -226,7 +226,7 @@ public class MeleeEnemy : EnemyBase
             m_DebugPlaceToGo = m_DebugPlayer.transform.position;
             if (!m_EndCharge)
             {
-                Debug.Log("RUSHHHH");
+                //Debug.Log("RUSHHHH");
 
                 //Vector3 direction = m_DebugPlayer.transform.position - transform.position;
                 if (!m_SetPlaceToRush)
@@ -240,7 +240,7 @@ public class MeleeEnemy : EnemyBase
             }
             else
             {
-                Debug.Log("chase");
+                //Debug.Log("chase");
                 Vector3 direction = m_DebugPlayer.transform.position - transform.position;
                 direction.Normalize();
                 transform.position += direction * m_ChaseSpeed;
@@ -288,61 +288,26 @@ public class MeleeEnemy : EnemyBase
         }
     }
 
-    //public void SetUpHitedAnimation()
-    //{
-    //    if (life <= 0)
-    //    {
-    //        m_Animator.SetTrigger("Die");
-    //    }
-    //    else
-    //    {
-    //        m_Animator.SetTrigger("Hited");
-    //    }
-    //}
 
     private bool ObstacleBetweenEnemyAndPlayer(GameObject _Go)
     {
         Vector2 raycastDirection = m_DebugPlayer.transform.position - transform.position;
         raycastDirection.Normalize();
-        ////RaycastHit2D[] hited;
-
-        //Physics2D.Raycast(transform.position, raycastDirection, m_ContactFilter, m_Hited, 10);
-
-        //if (m_Hited.Length > 0)
-        //{
-        //    return false;
-        //}
-        //else
-        //{
-        //    return true;
-        //}
-
 
         RaycastHit2D hit = Physics2D.Raycast(transform.position, raycastDirection, 10);
 
         if (hit.collider && hit.collider.CompareTag("Obstacle"))
         {
+            Debug.Log("hit OBject : " + hit.collider.name);
             return true;
         }
 
         return false;
-
-
-        //if (m_Hited.Length > 0)
-        //{
-        //    return false;
-        //}
-        //else
-        //{
-        //    return true;
-        //}
     }
 
-    private void OnDrawGizmos()
+    public float GetMeleeAttaxkRange()
     {
-        Gizmos.color = Color.blue;
-
-        Gizmos.DrawWireSphere(transform.position, m_MeleeAttackRange);
+        return m_MeleeAttackRange;
     }
 
 }
