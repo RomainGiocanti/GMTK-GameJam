@@ -1,6 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{F96B7942-CD37-46B7-9027-CB8653BA77BC}" SchemaVersion="94">
 	<InteractiveMusic>
-		<WorkUnit Name="Default Work Unit" ID="{F96B7942-CD37-46B7-9027-CB8653BA77BC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{F96B7942-CD37-46B7-9027-CB8653BA77BC}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="Main Level Theme" ID="{1A32D8F9-A427-478C-9048-693C4AEFD437}" ShortID="394795665">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="88888.8888888889"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A3D2279A-AE05-4ECA-953C-90BD777805BE}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3A7F8435-07F4-4292-9257-205B269E7A3C}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="Main Level Theme" ID="{115FEE8F-F0EE-4ED9-A256-1087D6B83C4D}" ShortID="291216706">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{3A7F8435-07F4-4292-9257-205B269E7A3C}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Main Level Theme" ID="{AC7BBAB4-63B7-4F5C-9EF3-54C358D52917}" ShortID="237869858">
+									<Language>SFX</Language>
+									<AudioFile>Main Level Theme.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<TransitionList>
+								<MusicTransition Name="Root" ID="{BA085A32-68B9-486A-A40B-C0D7125FA1EB}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</TransitionList>
+							<SequenceList>
+								<MusicTrackSequence Name="" ID="{CDB92E9C-73C1-47EB-97EF-B9AA03321429}">
+									<ClipList>
+										<MusicClip Name="Main Level Theme" ID="{EC2F1779-45BA-4AB1-9A5B-C0D4743CE760}">
+											<PropertyList>
+												<Property Name="EndTrimOffset" Type="Real64" Value="88888.8888888889"/>
+												<Property Name="FadeInMode" Type="int16" Value="0"/>
+												<Property Name="FadeOutMode" Type="int16" Value="0"/>
+											</PropertyList>
+											<AudioSourceRef Name="Main Level Theme" ID="{AC7BBAB4-63B7-4F5C-9EF3-54C358D52917}"/>
+										</MusicClip>
+									</ClipList>
+								</MusicTrackSequence>
+							</SequenceList>
+						</MusicTrack>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo MusicSyncType="3">
+								<StateGroupRef Name="PlayerHasArrow" ID="{A9911476-0787-42FE-8656-28EC2A81866B}"/>
+							</StateGroupInfo>
+							<StateGroupInfo>
+								<StateGroupRef Name="PlayerAlive" ID="{8829F4DD-B684-45BE-A99F-343719919CD8}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Dead" ID="{3B580FAF-27DB-408C-8272-2143CC7353A2}"/>
+								<CustomState Name="" ID="{7FECF1D3-5EA9-4534-9BC5-AF4D1EFDABEF}" ShortID="918213976">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="84"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Yes" ID="{A53CB537-8A6A-42CD-89EA-901F47749CEE}"/>
+								<CustomState Name="" ID="{652BBF3C-53D5-4A48-BD69-A50496081B8A}" ShortID="582181413">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16" Value="50"/>
+										<Property Name="Lowpass" Type="int16" Value="40"/>
+										<Property Name="Volume" Type="Real64" Value="-3"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="No" ID="{87C20B30-39E2-42FF-AE53-2C08AAFA8AF7}"/>
+								<CustomState Name="" ID="{DACF3A81-F1E9-46B6-BA23-7B4478E0934A}" ShortID="657381512"/>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Alive" ID="{8114760C-F48F-4FAE-A9BA-9B50038A34E9}"/>
+								<CustomState Name="" ID="{67F6DBFE-EDC5-447D-91A8-65F06F02F3DA}" ShortID="44951045"/>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<CueList>
+						<MusicCue Name="Entry Cue" ID="{5E47B642-6D5B-44EA-848E-F3D2F06334FC}"/>
+						<MusicCue Name="Exit Cue" ID="{67DBE3AE-B4B7-4658-8272-155D6B1760A3}">
+							<PropertyList>
+								<Property Name="CueType" Type="int16" Value="1"/>
+								<Property Name="TimeMs" Type="Real64" Value="88888.8888888889"/>
+							</PropertyList>
+						</MusicCue>
+					</CueList>
+				</MusicSegment>
+			</ChildrenList>
+		</WorkUnit>
 	</InteractiveMusic>
 </WwiseDocument>

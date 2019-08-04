@@ -1,0 +1,19 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	2557321869	PlayerAlive			\Default Work Unit\PlayerAlive	
+	3178051409	PlayerHasArrow			\Default Work Unit\PlayerHasArrow	
+
+State	ID	Name	State Group			Notes
+	0	None	PlayerAlive			
+	655265632	Alive	PlayerAlive			
+	2044049779	Dead	PlayerAlive			
+	0	None	PlayerHasArrow			
+	979470758	Yes	PlayerHasArrow			
+	1668749452	No	PlayerHasArrow			
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+
