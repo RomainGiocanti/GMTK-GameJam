@@ -21,6 +21,8 @@ public class ShootingScript : MonoBehaviour
         maximumHoldTime = buttonHoldDefault;
         shootingCanvas.SetActive(false);
     }
+
+
     void Update()
     {
         Vector3 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
@@ -29,6 +31,7 @@ public class ShootingScript : MonoBehaviour
 
         if (Input.GetButton("Fire1") && hasArrow == true)
         {
+            
             if (buttonHold >= 0)
             {
                 shootingCanvas.SetActive(true);
@@ -64,6 +67,7 @@ public class ShootingScript : MonoBehaviour
         {
             Instantiate(arrowPrefab, firepoint.position, firepoint.rotation);
             timerBar.color = Color.yellow;
+            AkSoundEngine.PostEvent("arrow_shot", gameObject);
         }
     }
 }
