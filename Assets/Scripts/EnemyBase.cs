@@ -4,6 +4,7 @@ using UnityEngine;
 
 
 // maybe inherit from an upper "base" class
+[RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(BoxCollider2D))]
 public abstract class EnemyBase : LivingBeing
 {
@@ -33,55 +34,25 @@ public abstract class EnemyBase : LivingBeing
 
     protected ContactFilter2D m_ContactFilter;
 
-    public bool test = false;
-
-    protected Animator m_Animator;
-
     // Start is called before the first frame update
     protected void Start()
     {
-        //SpriteRenderer renderer = gameObject.AddComponent<SpriteRenderer>();
-        //if (m_Sprite)
-        //{
-        //    renderer.sprite = m_Sprite;
-        //}
+        SpriteRenderer renderer = gameObject.AddComponent<SpriteRenderer>();
+        if (m_Sprite)
+        {
+            renderer.sprite = m_Sprite;
+        }
 
         go = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
-    protected new void Update()
+    protected void Update()
     {
-        base.Update();
-
-        if (test)
+        if (go && go.GetComponent<PlayerController>() && go.GetComponent<PlayerController>().GetComponent<ShootingScript>() && go.GetComponent<PlayerController>().GetComponent<ShootingScript>().hasArrow)
         {
             return;
         }
-
-        if (go)
-        {
-            if (go.GetComponent<PlayerController>().GetComponentInChildren<ShootingScript>())
-            {
-                if (go.GetComponent<PlayerController>().GetComponentInChildren<ShootingScript>().hasArrow)
-                {
-                    // desactive l'animator
-                    m_Animator.enabled = false;
-                    return;
-                }
-                else
-                {
-                    if (!m_Animator.enabled)
-                    {
-                        m_Animator.enabled = true;
-                    }
-
-                }
-            }
-        }
-
-        //m_Animator.enabled = true;
-
         // move
         // try attack
         // check if dead
@@ -91,7 +62,6 @@ public abstract class EnemyBase : LivingBeing
             TryAttack();
             //CheckIfDead();
         }
-
 
     }
 
@@ -106,7 +76,7 @@ public abstract class EnemyBase : LivingBeing
             Patrolling();
         }
 
-        ObstacleAvoidance();
+        //ObstacleAvoidance();
         // perform steering behavior
     }
 
@@ -148,7 +118,7 @@ public abstract class EnemyBase : LivingBeing
 
     protected bool CloseToGoal(Vector3 _Goal)
     {
-        return Vector2.Distance(transform.position, _Goal) < 0.1;
+        return Vector3.Distance(transform.position, _Goal) < 0.1;
     }
 
     //not useful now
@@ -178,8 +148,7 @@ public abstract class EnemyBase : LivingBeing
 
     protected bool InRange()
     {
-        float dist = Vector2.Distance(m_DebugPlayer.transform.position, gameObject.transform.position);
-        return dist < m_AttackRange;
+        return Vector3.Distance(m_DebugPlayer.transform.position, gameObject.transform.position) < m_AttackRange;
     }
 
     protected bool CoolDownGood()

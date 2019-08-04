@@ -22,8 +22,6 @@ public class RangedEnemy : EnemyBase
     new void Update()
     {
         base.Update();
-
-        // if life </ 0 , trigger in aniamtion
     }
 
     // is tower so don't move
