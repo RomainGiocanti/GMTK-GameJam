@@ -227,6 +227,12 @@ public abstract class EnemyBase : LivingBeing
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, m_AttackRange);
 
+        if (GetComponent<MeleeEnemy>())
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, GetComponent<MeleeEnemy>().GetMeleeAttaxkRange());
+        }
+
         if (m_DebugPlaceToGo != Vector3.zero)
         {
             Gizmos.color = Color.white;
