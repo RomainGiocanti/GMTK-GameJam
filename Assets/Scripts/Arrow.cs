@@ -24,10 +24,14 @@ public class Arrow : MonoBehaviour
         rb.velocity = Vector2.zero;
         anim.SetTrigger("Hit");
         arrowFeedBack.Invoke();
-        if(collision.gameObject.CompareTag("Player"))
+
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
         {
             GameObject[] Spikes = GameObject.FindGameObjectsWithTag("Spike");
-            foreach(GameObject spike in Spikes)
+            foreach (GameObject spike in Spikes)
             {
                 spike.GetComponent<SpikeScript>().timer = spike.GetComponent<SpikeScript>().timerDf;
                 spike.GetComponent<SpikeScript>().GetComponent<Animator>().SetFloat("Spiker", spike.GetComponent<SpikeScript>().timerDf);
@@ -37,7 +41,7 @@ public class Arrow : MonoBehaviour
                 GameObject.FindGameObjectWithTag("Weapon").GetComponent<ShootingScript>().buttonHoldDefault;
             Destroy(gameObject);
         }
-    }
+        }
     private void Update()
     {
         if (slowDown >= 0)
@@ -54,6 +58,7 @@ public class Arrow : MonoBehaviour
             if (speed < 0)
             {
                 speed = 0;
+                transform.GetComponent<Collider2D>().isTrigger = true;
                 anim.SetTrigger("Hit");
                 if(played == 1)
                 {
