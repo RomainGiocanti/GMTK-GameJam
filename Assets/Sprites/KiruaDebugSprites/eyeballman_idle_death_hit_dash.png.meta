@@ -1,7 +1,58 @@
 fileFormatVersion: 2
 guid: d7a0fe78de2d1014f872964a5c8b5d8e
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -3462479325671954079
+    second: eyeballman_idle_death_hit_dash_0
+  - first:
+      213: -3201229503170292156
+    second: eyeballman_idle_death_hit_dash_1
+  - first:
+      213: 4135188444453907968
+    second: eyeballman_idle_death_hit_dash_2
+  - first:
+      213: 7289969561430096463
+    second: eyeballman_idle_death_hit_dash_3
+  - first:
+      213: 6067791255735730250
+    second: eyeballman_idle_death_hit_dash_4
+  - first:
+      213: -5240058606207621867
+    second: eyeballman_idle_death_hit_dash_5
+  - first:
+      213: -2523452285379207737
+    second: eyeballman_idle_death_hit_dash_6
+  - first:
+      213: 5787638720976880181
+    second: eyeballman_idle_death_hit_dash_7
+  - first:
+      213: -1615889453720198336
+    second: eyeballman_idle_death_hit_dash_8
+  - first:
+      213: -8505908534226781720
+    second: eyeballman_idle_death_hit_dash_9
+  - first:
+      213: -111753234928678320
+    second: eyeballman_idle_death_hit_dash_10
+  - first:
+      213: -5849526493333655407
+    second: eyeballman_idle_death_hit_dash_11
+  - first:
+      213: 7992325567329596839
+    second: eyeballman_idle_death_hit_dash_12
+  - first:
+      213: 7825600828187527878
+    second: eyeballman_idle_death_hit_dash_13
+  - first:
+      213: -3741932631747065255
+    second: eyeballman_idle_death_hit_dash_14
+  - first:
+      213: -5099018417395350804
+    second: eyeballman_idle_death_hit_dash_15
+  - first:
+      213: -496628725982804204
+    second: eyeballman_idle_death_hit_dash_16
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +82,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +91,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,7 +114,18 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -71,7 +133,364 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 2
+        width: 24
+        height: 9
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb92efe5710fedf4c9ee9484463cfb52
+      internalID: -3462479325671954079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 4
+        width: 24
+        height: 8
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc563e8a176e62c4fa2a8477f4384121
+      internalID: -3201229503170292156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 5
+        width: 24
+        height: 9
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16dc439fb2747d24b87439a110fc43ec
+      internalID: 4135188444453907968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 5
+        width: 24
+        height: 10
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbd68dcf2848564ca1f305c3ed4df3e
+      internalID: 7289969561430096463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_4
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 4
+        width: 22
+        height: 11
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f9883d218da4b429de11f3b4be4216
+      internalID: 6067791255735730250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_5
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 2
+        width: 15
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b1054453cceb048912949986085439
+      internalID: -5240058606207621867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_6
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1
+        width: 24
+        height: 8
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6778cf8101a03a24c9648145f4d36daf
+      internalID: -2523452285379207737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_7
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 3
+        width: 17
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 494623df517118c4ab1a39189ea30206
+      internalID: 5787638720976880181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_8
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 2
+        width: 17
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54c71a7e61630d428b0b1697f866c5e
+      internalID: -1615889453720198336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_9
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 1
+        width: 15
+        height: 16
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b94f23d731ff9b9468d29a83cb4e9a3c
+      internalID: -8505908534226781720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_10
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 3
+        width: 19
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f5ac7db2211c6b4c806ffcfc0372f5e
+      internalID: -111753234928678320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_11
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 3
+        width: 19
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279c62243048f5d43b557868b3de4dc1
+      internalID: -5849526493333655407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_12
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 3
+        width: 19
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 291608a90751f4b40879b840a51a8dca
+      internalID: 7992325567329596839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_13
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 3
+        width: 19
+        height: 13
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ca51072e2f1b2443ace0a6e589572ba
+      internalID: 7825600828187527878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_14
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 0
+        width: 24
+        height: 5
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50da8d0a55c57d044b71556d74033747
+      internalID: -3741932631747065255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_15
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 0
+        width: 26
+        height: 5
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4d2ac00cd3b6f44b7fa400b4809144
+      internalID: -5099018417395350804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: eyeballman_idle_death_hit_dash_16
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 0
+        width: 27
+        height: 5
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4295f618d60204c44a2c1ebb86610e2c
+      internalID: -496628725982804204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LV2.unity
     guid: b0fd47c1fea28fe4892eef6b22af2c1f
+  - enabled: 1
+    path: Assets/Scenes/SpoilThatSongScene.unity
+    guid: baba112d4b9ffcf4e9b0f4cb58084e15
   m_configObjects: {}
