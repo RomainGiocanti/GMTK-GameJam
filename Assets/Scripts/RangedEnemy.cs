@@ -16,6 +16,9 @@ public class RangedEnemy : EnemyBase
     new void Start()
     {
         base.Start();
+
+        m_Animator = GetComponent<Animator>();
+        GetComponent<SpriteRenderer>().enabled = true;
     }
 
     // Update is called once per frame
@@ -39,7 +42,7 @@ public class RangedEnemy : EnemyBase
 
     private void Shoot(Vector3 _DirectionToShoot)
     {
-        Debug.Log("Shoot");
+        //Debug.Log("Shoot");
 
         Vector3 thisPos = transform.position;
 
@@ -48,10 +51,16 @@ public class RangedEnemy : EnemyBase
 
         GameObject projectile = Instantiate(m_ProjectilePrefab, posToSpawn, transform.rotation);
         projectile.GetComponent<EnemyProjectile>().SetDirection(_DirectionToShoot, m_BulletSpeed);
+        m_Animator.SetTrigger("Shoot");
     }
 
     protected override void Attack()
     {
+        if (m_IsDead)
+        {
+            return;
+        }
+
         Vector3 directionToShoot = m_DebugPlayer.transform.position - transform.position;
         directionToShoot.Normalize();
 

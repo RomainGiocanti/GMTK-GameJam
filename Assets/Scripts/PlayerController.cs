@@ -8,7 +8,6 @@ public class PlayerController : LivingBeing
     private Vector2 mv;
     private float defaultSpeed;
     Animator anim;
-
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -18,6 +17,14 @@ public class PlayerController : LivingBeing
 
     void Update()
     {
+        if(life <= 0)
+        {
+            anim.SetTrigger("Died");
+            Destroy(gameObject, 1.5f);
+            speed = 0;
+            newSpeed = 0;
+        
+        }
         if (transform.GetComponent<Knockback>().knockBack == false)
         {
             Vector2 mi = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));

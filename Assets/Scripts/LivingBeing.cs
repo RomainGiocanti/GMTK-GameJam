@@ -20,13 +20,16 @@ public class LivingBeing : MonoBehaviour
     }
 
     protected void Update()
-    {
+    { 
         Debug.Log("life : " + life);
         if (life <= 0)
         {
+            if (GetComponent<EnemyBase>())
+            {
+                GetComponent<EnemyBase>().SetDead();
+            }
             Destroy(gameObject, 1.5f);
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -37,7 +40,10 @@ public class LivingBeing : MonoBehaviour
         {
             life -= collision.gameObject.GetComponent<LivingBeing>().damage;
 
-
+            if (unity == UnityType.player && collision.gameObject.CompareTag("eHit"))
+            {
+                collision.gameObject.GetComponent<EnemyProjectile>().OnHit();
+            }
         }
         else if
           (unity == UnityType.enemy && collision.gameObject.CompareTag("Arrow"))
@@ -45,8 +51,19 @@ public class LivingBeing : MonoBehaviour
 
             life -= GameObject.FindGameObjectWithTag("Player").GetComponent<LivingBeing>().damage;
 
-            gameObject.GetComponent<MeleeEnemy>().SetUpHitedAnimation();
+            //if (gameObject.GetComponent<MeleeEnemy>())
+            //{
+            //    gameObject.GetComponent<MeleeEnemy>().SetUpHitedAnimation();
+            //}
+            //else if (gameObject.GetComponent<RangedEnemy>())
+            //{
+            //    gameObject.GetComponent<RangedEnemy>().SetUpHitedAnimation();
+            //}
 
+            if (gameObject.GetComponent<EnemyBase>())
+            {
+                gameObject.GetComponent<EnemyBase>().SetUpHitedAnimation();
+            }
         }
         else if
           (unity == UnityType.barrel && collision.gameObject.CompareTag("Arrow"))

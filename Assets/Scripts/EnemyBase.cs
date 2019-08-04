@@ -204,11 +204,34 @@ public abstract class EnemyBase : LivingBeing
 
     }
 
+    public void SetUpHitedAnimation()
+    {
+        if (life <= 0)
+        {
+            m_Animator.SetTrigger("Die");
+        }
+        else
+        {
+            m_Animator.SetTrigger("Hited");
+        }
+    }
+
+    public void SetDead()
+    {
+        m_IsDead = true;
+    }
+
     private void OnDrawGizmos()
     {
         // draw attack range
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, m_AttackRange);
+
+        if (GetComponent<MeleeEnemy>())
+        {
+            Gizmos.color = Color.blue;
+            Gizmos.DrawWireSphere(transform.position, GetComponent<MeleeEnemy>().GetMeleeAttaxkRange());
+        }
 
         if (m_DebugPlaceToGo != Vector3.zero)
         {
