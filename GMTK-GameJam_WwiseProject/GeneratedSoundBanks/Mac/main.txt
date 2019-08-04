@@ -1,9 +1,39 @@
 Event	ID	Name			Wwise Object Path	Notes
-	63796330	main_music			\Default Work Unit\main_music	
+	96323282	eye_flap			\Default Work Unit\Eye\eye_flap	
+	124877840	turret_death			\Default Work Unit\Turret\turret_death	
+	145372743	eye_death			\Default Work Unit\Eye\eye_death	
+	178345354	turret_dmg			\Default Work Unit\Turret\turret_dmg	
+	493727331	eye_charge			\Default Work Unit\Eye\eye_charge	
+	584352822	trap_spikes			\Default Work Unit\trap_spikes	
+	722354063	eye_dash			\Default Work Unit\Eye\eye_dash	
+	741190258	arrow_impact_syn			\Default Work Unit\Arrow\arrow_impact_syn	
+	862919212	timeswitch_rev			\Default Work Unit\TS\timeswitch_rev	
+	871813740	player_hit			\Default Work Unit\Player\player_hit	
+	1008951467	arrow_bounce			\Default Work Unit\Arrow\arrow_bounce	
+	1058425211	arrow_pickup			\Default Work Unit\Arrow\arrow_pickup	
+	1232017583	blob_death			\Default Work Unit\Blob\blob_death	
+	1602890812	turret_idle			\Default Work Unit\Turret\turret_idle	
+	1866025847	footstep			\Default Work Unit\Player\footstep	
+	2004922858	arrow_hit			\Default Work Unit\Arrow\arrow_hit	
+	2024222415	ui_back			\Default Work Unit\UI\ui_back	
+	2103945677	blob_dmg			\Default Work Unit\Blob\blob_dmg	
+	2132750258	turret_fire			\Default Work Unit\Turret\turret_fire	
+	2249769530	ui_click			\Default Work Unit\UI\ui_click	
+	2262834706	timeswitch			\Default Work Unit\TS\timeswitch	
+	2394582229	player_dash			\Default Work Unit\Player\player_dash	
+	2733655771	arrow_tension			\Default Work Unit\Arrow\arrow_tension	
+	2942839011	gameload			\Default Work Unit\gameload	
+	3083087645	player_death			\Default Work Unit\Player\player_death	
+	3991942870	music			\Default Work Unit\music	
+	4053768479	eye_pain			\Default Work Unit\Eye\eye_pain	
+	4139883651	arrow_shot			\Default Work Unit\Arrow\arrow_shot	
+	4159628516	ui_conf			\Default Work Unit\UI\ui_conf	
+	4162304824	player_invincibility			\Default Work Unit\Player\player_invincibility	
 
 State Group	ID	Name			Wwise Object Path	Notes
 	2557321869	PlayerAlive			\Default Work Unit\PlayerAlive	
 	3178051409	PlayerHasArrow			\Default Work Unit\PlayerHasArrow	
+	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
 	0	None	PlayerAlive			
@@ -12,11 +42,46 @@ State	ID	Name	State Group			Notes
 	0	None	PlayerHasArrow			
 	979470758	Yes	PlayerHasArrow			
 	1668749452	No	PlayerHasArrow			
+	0	None	GameState			
+	702482391	Game	GameState			
+	2607556080	Menu	GameState			
+	2716678721	Victory	GameState			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	582181413	Yes	PlayerHasArrow	\Interactive Music Hierarchy\Default Work Unit\Main Level Theme		
-	918213976	Dead	PlayerAlive	\Interactive Music Hierarchy\Default Work Unit\Main Level Theme		
+	582181413	Yes	PlayerHasArrow	\Interactive Music Hierarchy\Default Work Unit\Music_Controller\Main Level Theme		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	237869858	Main Level Theme	C:\Users\Simo\Documents\GitHub\GMTK-GameJam\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\Main Level Theme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Main Level Theme\Main Level Theme		15680064
+	33487862	ui_conf	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ ui_conf_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ui_conf		1458308
+	83973946	turret_fire	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ turret_fire_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\turret\turret_fire		1458308
+	204035942	eye_pain	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ eye_pain_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\eye\eye_pain		1458308
+	227882906	eye_death	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ eye_death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\eye\eye_death		1458308
+	237869858	Main Level Theme	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\Main Level Theme_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Controller\Main Level Theme\Main Level Theme		15680064
+	272259199	foot_2	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ foot_2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\foot\Foot_Switch\foot_2		1458308
+	309511202	eye_flap	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ eye_flap_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\eye\eye_flap		1458308
+	316391510	arrow_tension	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ arrow_tension_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\arrow\arrow_tension		1458308
+	339525301	arrow_impact_syn	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ arrow_impact_syn_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\arrow\arrow_impact_syn		1458308
+	340243294	player_hit	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ player_hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\player\player_hit		1458308
+	430665675	player_dash	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ player_dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\player\player_dash		1458308
+	438486472	trap_spikes	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ trap_spikes_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\trap_spikes		1458308
+	479285604	player_invincibility	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ player_invincibility_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\player\player_invincibility		1458308
+	482187859	timeswitch	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ timeswitch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TS\timeswitch		1458308
+	483961214	Menu Music	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\Menu Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Controller\Victory\Menu Music		6451264
+	512699883	arrow_hit	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ arrow_hit_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\arrow\arrow_hit		1458308
+	584772693	turret_dmg	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ turret_dmg_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\turret\turret_dmg		1458308
+	587045359	player_death	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ player_death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\player\player_death		1458308
+	607041519	turret_death	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ turret_death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\turret\turret_death		1458308
+	608570617	timeswitch_rev	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ timeswitch_rev_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TS\timeswitch_rev		1458308
+	649896617	eye_charge	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ eye_charge_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\eye\eye_charge		1458308
+	677816904	ui_click	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ ui_click_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ui_click		1458308
+	715927638	blob_dmg	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ blob_dmg_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\blob\blob_dmg		1458308
+	766001134	arrow_pickup	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ arrow_pickup_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\arrow\arrow_pickup		1458308
+	791986134	arrow_shot	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ arrow_shot_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\arrow\arrow_shot		1458308
+	797106276	eye_dash	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ eye_dash_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\eye\eye_dash		1458308
+	808210246	arrow_bounce	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ arrow_bounce_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\arrow\arrow_bounce		1458308
+	890361955	foot_1	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ foot_1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\foot\Foot_Switch\foot_1		1458308
+	892995838	foot_3	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ foot_3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\foot\Foot_Switch\foot_3		1458308
+	964180127	blob_death	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ blob_death_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\blob\blob_death		1458308
+	980882133	Funeral March (Game Over)	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\Funeral March (Game Over)_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music_Controller\Funeral March (Game Over)\Funeral March (Game Over)		2527340
+	985942896	ui_back	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ ui_back_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\ui_back		1458308
+	1003327067	turret_idle	C:\Users\Simo\Desktop\Sourcetree\GMTK-GameJam_WwiseProject\.cache\Mac\SFX\SD_ turret_idle_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\turret\turret_idle		1458308
 
