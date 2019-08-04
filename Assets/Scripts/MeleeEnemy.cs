@@ -82,7 +82,14 @@ public class MeleeEnemy : EnemyBase
                 Charge();
                 m_Animator.enabled = true;
                 m_Animator.SetTrigger("Dash");
-                Debug.Log("here");
+
+                Color tmp = gameObject.GetComponent<SpriteRenderer>().color;
+                tmp.a = 1;
+                tmp.r = 1;
+                tmp.g = 1;
+                tmp.b = 1;
+                gameObject.GetComponent<SpriteRenderer>().color = tmp;
+                // repasse en blanc
             }
         }
 
@@ -107,6 +114,13 @@ public class MeleeEnemy : EnemyBase
                 m_HasCharged = false;
                 m_SetPlaceToRush = false;
                 m_TimerLoading = 0;
+
+                Color tmp = gameObject.GetComponent<SpriteRenderer>().color;
+                tmp.a = 1;
+                tmp.r = 1;
+                tmp.g = 1;
+                tmp.b = 1;
+                gameObject.GetComponent<SpriteRenderer>().color = tmp;
             }
         }
     }
@@ -165,7 +179,14 @@ public class MeleeEnemy : EnemyBase
         if (!m_HasCharged)
         {
             m_StartLoading = true;
-            Debug.Log("disa");
+
+            Color tmp = gameObject.GetComponent<SpriteRenderer>().color;
+            tmp.a = 1;
+            tmp.r = 1;
+            tmp.g = 0;
+            tmp.b = 0;
+            gameObject.GetComponent<SpriteRenderer>().color = tmp;
+
             m_Animator.enabled = false;
             //Charge();
         }
@@ -179,7 +200,7 @@ public class MeleeEnemy : EnemyBase
 
     private bool InMeleeRange()
     {
-        return Vector3.Distance(transform.position, m_DebugPlayer.transform.position) < m_MeleeAttackRange;
+        return Vector2.Distance(transform.position, m_DebugPlayer.transform.position) < m_MeleeAttackRange;
     }
 
     private void Charge()
@@ -255,7 +276,7 @@ public class MeleeEnemy : EnemyBase
 
         if (obstacleToDodge)
         {
-            if (Vector3.Distance(transform.position, obstacleToDodge.transform.position) < m_AttackRange + 1)
+            if (Vector2.Distance(transform.position, obstacleToDodge.transform.position) < m_AttackRange + 1)
             {
                 if (ObstacleBetweenEnemyAndPlayer(obstacleToDodge))
                 {
@@ -267,17 +288,17 @@ public class MeleeEnemy : EnemyBase
         }
     }
 
-    public void SetUpHitedAnimation()
-    {
-        if (life <= 0)
-        {
-            m_Animator.SetTrigger("Die");
-        }
-        else
-        {
-            m_Animator.SetTrigger("Hited");
-        }
-    }
+    //public void SetUpHitedAnimation()
+    //{
+    //    if (life <= 0)
+    //    {
+    //        m_Animator.SetTrigger("Die");
+    //    }
+    //    else
+    //    {
+    //        m_Animator.SetTrigger("Hited");
+    //    }
+    //}
 
     private bool ObstacleBetweenEnemyAndPlayer(GameObject _Go)
     {
@@ -315,6 +336,13 @@ public class MeleeEnemy : EnemyBase
         //{
         //    return true;
         //}
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+
+        Gizmos.DrawWireSphere(transform.position, m_MeleeAttackRange);
     }
 
 }

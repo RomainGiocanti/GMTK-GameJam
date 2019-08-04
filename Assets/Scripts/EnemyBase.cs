@@ -204,6 +204,23 @@ public abstract class EnemyBase : LivingBeing
 
     }
 
+    public void SetUpHitedAnimation()
+    {
+        if (life <= 0)
+        {
+            m_Animator.SetTrigger("Die");
+        }
+        else
+        {
+            m_Animator.SetTrigger("Hited");
+        }
+    }
+
+    public void SetDead()
+    {
+        m_IsDead = true;
+    }
+
     private void OnDrawGizmos()
     {
         // draw attack range
