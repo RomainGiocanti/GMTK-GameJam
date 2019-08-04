@@ -5,7 +5,36 @@
 			<ChildrenList>
 				<SoundBank Name="main" ID="{1E1E1ED4-6967-4577-A61E-E7FCF271A871}">
 					<ObjectInclusionList>
-						<ObjectRef Name="main_music" ID="{C5A52DCA-C49C-4D97-804B-E28660ADDB9A}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_dash" ID="{B69D10A5-8BF5-400C-965D-A5F5A9B67371}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_back" ID="{ADBDC12A-ECC7-40EC-A4D7-513BAABFEED3}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="arrow_impact_syn" ID="{01975819-15F3-41BF-980A-5F4F2009A261}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="turret_idle" ID="{8C826750-6621-42FA-A9EB-D8A2E6D3AC55}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_hit" ID="{2044E75E-F9FA-4311-A3D3-EA8D848C6101}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_death" ID="{0C47EDC6-733F-432B-9572-C62C49F046A3}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_conf" ID="{04877A32-1A2D-4345-810F-12C4F8D217D2}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="blob_death" ID="{EE4BA897-15B3-44BC-BC6F-72DAC7C4505B}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="gameload" ID="{76635A4D-CDAC-45D5-9CC4-D913311727BB}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="turret_death" ID="{A8935911-0A94-45F0-8465-B84F15EB2658}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="blob_dmg" ID="{5EEFA53B-556F-4688-9C86-682B3D1B02E1}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="ui_click" ID="{11EBD119-D222-4749-A0FB-CD3F8F2E2373}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="music" ID="{B268FA4E-40EB-477B-B3A7-31A4C932877D}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="eye_dash" ID="{C4958DBD-DEF6-47AD-992C-6BE7332EBA91}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="player_invincibility" ID="{470B2A94-BAAD-48B5-B5DD-EA9A38B71912}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="arrow_pickup" ID="{7FFFFFAA-F3FA-494C-B19D-536989C0AC95}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="trap_spikes" ID="{35588049-2110-4A0C-A226-CAF5CDF5BCC1}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="eye_charge" ID="{5731F50A-D8C0-4A73-8991-025A9CA4953B}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="timeswitch" ID="{8D8B74D9-95EC-4AEE-B100-0E316A6E48AF}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="eye_flap" ID="{5845D8CD-EABF-4BEE-83E9-54BCEEFC2A45}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="arrow_tension" ID="{2A318C58-B06C-4C1C-B11E-EF1D87CA16EF}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="arrow_hit" ID="{F7521C1D-7755-4C32-8124-35AA40FCE78E}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="turret_dmg" ID="{8157E13F-E857-4C53-A95B-32A03AD503E0}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="arrow_bounce" ID="{0A908984-974B-4CBA-9043-48E0CCEAB78F}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="turret_fire" ID="{39EA325F-9783-4D0E-AB87-C180DCD21C25}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="footstep" ID="{24E4F417-8124-4D79-874C-8082883C9FBD}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="eye_pain" ID="{E2EA499A-A812-4D91-AD33-CF251869278F}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="eye_death" ID="{CA82514B-7EFA-4DA2-AC24-5928D4778F69}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="timeswitch_rev" ID="{60AE016D-4621-4DFC-9349-5E3333C7C586}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="arrow_shot" ID="{2CDCF275-4BE9-4E25-91E9-67CDB7F75630}" WorkUnitID="{591A7796-9C5B-4FB9-90EE-37CCEBAFA2F7}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

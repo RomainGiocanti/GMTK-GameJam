@@ -1,6 +1,7 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	2557321869	PlayerAlive			\Default Work Unit\PlayerAlive	
 	3178051409	PlayerHasArrow			\Default Work Unit\PlayerHasArrow	
+	4091656514	GameState			\Default Work Unit\GameState	
 
 State	ID	Name	State Group			Notes
 	0	None	PlayerAlive			
@@ -9,6 +10,10 @@ State	ID	Name	State Group			Notes
 	0	None	PlayerHasArrow			
 	979470758	Yes	PlayerHasArrow			
 	1668749452	No	PlayerHasArrow			
+	0	None	GameState			
+	702482391	Game	GameState			
+	2607556080	Menu	GameState			
+	2716678721	Victory	GameState			
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	

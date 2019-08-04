@@ -21,12 +21,169 @@
 			<ShortName>main</ShortName>
 			<Path>main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="63796330" Name="main_music" ObjectPath="\Events\Default Work Unit\main_music" DurationType="OneShot" DurationMin="88.888893" DurationMax="88.888893"/>
+				<Event Id="1008951467" Name="arrow_bounce" ObjectPath="\Events\Default Work Unit\Arrow\arrow_bounce" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="2004922858" Name="arrow_hit" ObjectPath="\Events\Default Work Unit\Arrow\arrow_hit" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="741190258" Name="arrow_impact_syn" ObjectPath="\Events\Default Work Unit\Arrow\arrow_impact_syn" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="1058425211" Name="arrow_pickup" ObjectPath="\Events\Default Work Unit\Arrow\arrow_pickup" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="4139883651" Name="arrow_shot" ObjectPath="\Events\Default Work Unit\Arrow\arrow_shot" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="2733655771" Name="arrow_tension" ObjectPath="\Events\Default Work Unit\Arrow\arrow_tension" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="1232017583" Name="blob_death" ObjectPath="\Events\Default Work Unit\Blob\blob_death" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="2103945677" Name="blob_dmg" ObjectPath="\Events\Default Work Unit\Blob\blob_dmg" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="493727331" Name="eye_charge" ObjectPath="\Events\Default Work Unit\Eye\eye_charge" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="722354063" Name="eye_dash" ObjectPath="\Events\Default Work Unit\Eye\eye_dash" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="145372743" Name="eye_death" ObjectPath="\Events\Default Work Unit\Eye\eye_death" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="96323282" Name="eye_flap" ObjectPath="\Events\Default Work Unit\Eye\eye_flap" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="4053768479" Name="eye_pain" ObjectPath="\Events\Default Work Unit\Eye\eye_pain" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="1866025847" Name="footstep" ObjectPath="\Events\Default Work Unit\Player\footstep" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="2942839011" Name="gameload" ObjectPath="\Events\Default Work Unit\gameload" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3991942870" Name="music" ObjectPath="\Events\Default Work Unit\music" DurationType="Infinite"/>
+				<Event Id="2394582229" Name="player_dash" ObjectPath="\Events\Default Work Unit\Player\player_dash" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="3083087645" Name="player_death" ObjectPath="\Events\Default Work Unit\Player\player_death" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="871813740" Name="player_hit" ObjectPath="\Events\Default Work Unit\Player\player_hit" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="4162304824" Name="player_invincibility" ObjectPath="\Events\Default Work Unit\Player\player_invincibility" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="2262834706" Name="timeswitch" ObjectPath="\Events\Default Work Unit\TS\timeswitch" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="862919212" Name="timeswitch_rev" ObjectPath="\Events\Default Work Unit\TS\timeswitch_rev" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="584352822" Name="trap_spikes" ObjectPath="\Events\Default Work Unit\trap_spikes" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="124877840" Name="turret_death" ObjectPath="\Events\Default Work Unit\Turret\turret_death" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="178345354" Name="turret_dmg" ObjectPath="\Events\Default Work Unit\Turret\turret_dmg" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="2132750258" Name="turret_fire" ObjectPath="\Events\Default Work Unit\Turret\turret_fire" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="1602890812" Name="turret_idle" ObjectPath="\Events\Default Work Unit\Turret\turret_idle" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="2024222415" Name="ui_back" ObjectPath="\Events\Default Work Unit\UI\ui_back" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="2249769530" Name="ui_click" ObjectPath="\Events\Default Work Unit\UI\ui_click" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
+				<Event Id="4159628516" Name="ui_conf" ObjectPath="\Events\Default Work Unit\UI\ui_conf" DurationType="OneShot" DurationMin="8.266689" DurationMax="8.266689"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="33487862" Language="SFX">
+					<ShortName>SD_ ui_conf.wav</ShortName>
+					<Path>SFX\SD_ ui_conf_10C4C929.wem</Path>
+				</File>
+				<File Id="83973946" Language="SFX">
+					<ShortName>SD_ turret_fire.wav</ShortName>
+					<Path>SFX\SD_ turret_fire_10C4C929.wem</Path>
+				</File>
+				<File Id="204035942" Language="SFX">
+					<ShortName>SD_ eye_pain.wav</ShortName>
+					<Path>SFX\SD_ eye_pain_10C4C929.wem</Path>
+				</File>
+				<File Id="227882906" Language="SFX">
+					<ShortName>SD_ eye_death.wav</ShortName>
+					<Path>SFX\SD_ eye_death_10C4C929.wem</Path>
+				</File>
 				<File Id="237869858" Language="SFX">
 					<ShortName>Main Level Theme.wav</ShortName>
 					<Path>SFX\Main Level Theme_D79FB2B7.wem</Path>
+				</File>
+				<File Id="272259199" Language="SFX">
+					<ShortName>SD_ foot_2.wav</ShortName>
+					<Path>SFX\SD_ foot_2_10C4C929.wem</Path>
+				</File>
+				<File Id="309511202" Language="SFX">
+					<ShortName>SD_ eye_flap.wav</ShortName>
+					<Path>SFX\SD_ eye_flap_10C4C929.wem</Path>
+				</File>
+				<File Id="316391510" Language="SFX">
+					<ShortName>SD_ arrow_tension.wav</ShortName>
+					<Path>SFX\SD_ arrow_tension_10C4C929.wem</Path>
+				</File>
+				<File Id="339525301" Language="SFX">
+					<ShortName>SD_ arrow_impact_syn.wav</ShortName>
+					<Path>SFX\SD_ arrow_impact_syn_10C4C929.wem</Path>
+				</File>
+				<File Id="340243294" Language="SFX">
+					<ShortName>SD_ player_hit.wav</ShortName>
+					<Path>SFX\SD_ player_hit_10C4C929.wem</Path>
+				</File>
+				<File Id="430665675" Language="SFX">
+					<ShortName>SD_ player_dash.wav</ShortName>
+					<Path>SFX\SD_ player_dash_10C4C929.wem</Path>
+				</File>
+				<File Id="438486472" Language="SFX">
+					<ShortName>SD_ trap_spikes.wav</ShortName>
+					<Path>SFX\SD_ trap_spikes_10C4C929.wem</Path>
+				</File>
+				<File Id="479285604" Language="SFX">
+					<ShortName>SD_ player_invincibility.wav</ShortName>
+					<Path>SFX\SD_ player_invincibility_10C4C929.wem</Path>
+				</File>
+				<File Id="482187859" Language="SFX">
+					<ShortName>SD_ timeswitch.wav</ShortName>
+					<Path>SFX\SD_ timeswitch_10C4C929.wem</Path>
+				</File>
+				<File Id="483961214" Language="SFX">
+					<ShortName>Menu Music.wav</ShortName>
+					<Path>SFX\Menu Music_D79FB2B7.wem</Path>
+				</File>
+				<File Id="512699883" Language="SFX">
+					<ShortName>SD_ arrow_hit.wav</ShortName>
+					<Path>SFX\SD_ arrow_hit_10C4C929.wem</Path>
+				</File>
+				<File Id="584772693" Language="SFX">
+					<ShortName>SD_ turret_dmg.wav</ShortName>
+					<Path>SFX\SD_ turret_dmg_10C4C929.wem</Path>
+				</File>
+				<File Id="587045359" Language="SFX">
+					<ShortName>SD_ player_death.wav</ShortName>
+					<Path>SFX\SD_ player_death_10C4C929.wem</Path>
+				</File>
+				<File Id="607041519" Language="SFX">
+					<ShortName>SD_ turret_death.wav</ShortName>
+					<Path>SFX\SD_ turret_death_10C4C929.wem</Path>
+				</File>
+				<File Id="608570617" Language="SFX">
+					<ShortName>SD_ timeswitch_rev.wav</ShortName>
+					<Path>SFX\SD_ timeswitch_rev_10C4C929.wem</Path>
+				</File>
+				<File Id="649896617" Language="SFX">
+					<ShortName>SD_ eye_charge.wav</ShortName>
+					<Path>SFX\SD_ eye_charge_10C4C929.wem</Path>
+				</File>
+				<File Id="677816904" Language="SFX">
+					<ShortName>SD_ ui_click.wav</ShortName>
+					<Path>SFX\SD_ ui_click_10C4C929.wem</Path>
+				</File>
+				<File Id="715927638" Language="SFX">
+					<ShortName>SD_ blob_dmg.wav</ShortName>
+					<Path>SFX\SD_ blob_dmg_10C4C929.wem</Path>
+				</File>
+				<File Id="766001134" Language="SFX">
+					<ShortName>SD_ arrow_pickup.wav</ShortName>
+					<Path>SFX\SD_ arrow_pickup_10C4C929.wem</Path>
+				</File>
+				<File Id="791986134" Language="SFX">
+					<ShortName>SD_ arrow_shot.wav</ShortName>
+					<Path>SFX\SD_ arrow_shot_10C4C929.wem</Path>
+				</File>
+				<File Id="797106276" Language="SFX">
+					<ShortName>SD_ eye_dash.wav</ShortName>
+					<Path>SFX\SD_ eye_dash_10C4C929.wem</Path>
+				</File>
+				<File Id="808210246" Language="SFX">
+					<ShortName>SD_ arrow_bounce.wav</ShortName>
+					<Path>SFX\SD_ arrow_bounce_10C4C929.wem</Path>
+				</File>
+				<File Id="890361955" Language="SFX">
+					<ShortName>SD_ foot_1.wav</ShortName>
+					<Path>SFX\SD_ foot_1_10C4C929.wem</Path>
+				</File>
+				<File Id="892995838" Language="SFX">
+					<ShortName>SD_ foot_3.wav</ShortName>
+					<Path>SFX\SD_ foot_3_10C4C929.wem</Path>
+				</File>
+				<File Id="964180127" Language="SFX">
+					<ShortName>SD_ blob_death.wav</ShortName>
+					<Path>SFX\SD_ blob_death_10C4C929.wem</Path>
+				</File>
+				<File Id="980882133" Language="SFX">
+					<ShortName>Funeral March (Game Over).wav</ShortName>
+					<Path>SFX\Funeral March (Game Over)_D79FB2B7.wem</Path>
+				</File>
+				<File Id="985942896" Language="SFX">
+					<ShortName>SD_ ui_back.wav</ShortName>
+					<Path>SFX\SD_ ui_back_10C4C929.wem</Path>
+				</File>
+				<File Id="1003327067" Language="SFX">
+					<ShortName>SD_ turret_idle.wav</ShortName>
+					<Path>SFX\SD_ turret_idle_10C4C929.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

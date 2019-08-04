@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<StateGroup Name="PlayerHasArrow" ID="{A9911476-0787-42FE-8656-28EC2A81866B}">
 					<PropertyList>
-						<Property Name="DefaultTransitionTime" Type="Real64" Value="1.5"/>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
 					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{BBBB0D60-71A3-4907-B5C8-FBE0783D62AE}"/>
@@ -21,6 +21,17 @@
 						<State Name="None" ID="{31CBE517-C79B-4201-AE87-2D866A9EDE55}"/>
 						<State Name="Alive" ID="{8114760C-F48F-4FAE-A9BA-9B50038A34E9}"/>
 						<State Name="Dead" ID="{3B580FAF-27DB-408C-8272-2143CC7353A2}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="GameState" ID="{94EEC355-D2A5-47BE-B29E-68178F6A55E5}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0.5"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{26DE4279-8F9B-4B98-8E34-B71C8319025B}"/>
+						<State Name="Menu" ID="{507191DC-3DE6-48BC-969B-4921CC5A5EE5}"/>
+						<State Name="Game" ID="{23D2A7B1-C57E-4810-B968-A10335918085}"/>
+						<State Name="Victory" ID="{03F57C5F-155A-43DF-BBDE-09C9D091D846}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>
