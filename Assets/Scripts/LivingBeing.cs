@@ -20,7 +20,7 @@ public class LivingBeing : MonoBehaviour
     }
 
     protected void Update()
-    {
+    { 
         Debug.Log("life : " + life);
         if (life <= 0)
         {
@@ -30,7 +30,6 @@ public class LivingBeing : MonoBehaviour
             }
             Destroy(gameObject, 1.5f);
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
