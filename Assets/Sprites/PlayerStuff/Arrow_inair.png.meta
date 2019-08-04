@@ -140,9 +140,9 @@ TextureImporter:
       name: Arrow_inair_0
       rect:
         serializedVersion: 2
-        x: 3
+        x: 2
         y: 5
-        width: 15
+        width: 16
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -151,7 +151,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c557c4fc636a134883fc85c7731e4ca
+      spriteID: b0579751c3b58544e9bf07b79066854f
       internalID: -2650747550981085840
       vertices: []
       indices: 
@@ -161,9 +161,9 @@ TextureImporter:
       name: Arrow_inair_1
       rect:
         serializedVersion: 2
-        x: 23
+        x: 21
         y: 5
-        width: 15
+        width: 16
         height: 7
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -172,7 +172,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14c8c648253916949bd254a03fd63a79
+      spriteID: 0a6531774128cc241be05aed9dad1e03
       internalID: -5782641981124653903
       vertices: []
       indices: 
@@ -182,9 +182,9 @@ TextureImporter:
       name: Arrow_inair_2
       rect:
         serializedVersion: 2
-        x: 43
+        x: 42
         y: 6
-        width: 15
+        width: 16
         height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -193,7 +193,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc25459bb3195354f817b7f4d4ed0492
+      spriteID: da6759741ccc8aa4eb3e91a0b27bba27
       internalID: -1214891091861424389
       vertices: []
       indices: 
@@ -202,7 +202,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 24d1064950bb25f4c8f3649b973ee2f1
+    spriteID: e62cfeccb4d1fba419149b9e82b438b2
     internalID: 0
     vertices: []
     indices: 

@@ -26,6 +26,18 @@ public class Knockback : MonoBehaviour
             knockBack = true;
         }
     }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Spike"))
+        {
+            knockDirection = (collision.transform.position - transform.position).normalized;
+            knockBack = true;
+            if (transform.position == collision.transform.position)
+            {
+                knockDirection = transform.right;
+            }
+        }
+    }
 
     private void Update()
     {
